@@ -1,0 +1,17 @@
+[
+  {"t": 4.2, "sfx": "impact", "vol": 0.85},
+  {"t": 6.3, "sfx": "whoosh", "vol": 0.55},
+  {"t": 14.0, "sfx": "whoosh", "vol": 0.65},
+  {"t": 22.9, "sfx": "impact", "vol": 0.75},
+  {"t": 25.0, "sfx": "stamp", "vol": 0.7},
+  {"t": 27.0, "sfx": "stamp", "vol": 0.7},
+  {"t": 28.6, "sfx": "whoosh", "vol": 0.55},
+  {"t": 30.8, "sfx": "stamp", "vol": 0.75},
+  {"t": 32.6, "sfx": "whoosh", "vol": 0.65},
+  {"t": 37.5, "sfx": "lock", "vol": 0.85},
+  {"t": 39.85, "sfx": "whoosh", "vol": 0.65},
+  {"t": 44.5, "sfx": "ping", "vol": 0.5},
+  {"t": 47.15, "sfx": "whoosh", "vol": 0.55},
+  {"t": 53.2, "sfx": "whoosh", "vol": 0.65},
+  {"t": 55.8, "sfx": "success", "vol": 0.7}
+]

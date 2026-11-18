@@ -1,0 +1,37 @@
+{
+ "original_duration": 58.928,
+ "trimmed_duration": 58.217,
+ "removed_total": 0.711,
+ "cuts": [
+  {
+   "orig_pause_start": 6.253,
+   "orig_pause_len": 0.253,
+   "new_pause_len": 0.146,
+   "removed": 0.107
+  },
+  {
+   "orig_pause_start": 13.668,
+   "orig_pause_len": 0.278,
+   "new_pause_len": 0.153,
+   "removed": 0.124
+  },
+  {
+   "orig_pause_start": 32.728,
+   "orig_pause_len": 0.374,
+   "new_pause_len": 0.182,
+   "removed": 0.192
+  },
+  {
+   "orig_pause_start": 36.617,
+   "orig_pause_len": 0.335,
+   "new_pause_len": 0.171,
+   "removed": 0.165
+  },
+  {
+   "orig_pause_start": 58.755,
+   "orig_pause_len": 0.173,
+   "new_pause_len": 0.05,
+   "removed": 0.123
+  }
+ ]
+}

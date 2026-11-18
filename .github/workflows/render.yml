@@ -1,0 +1,85 @@
+name: Render Stick3D Video
+
+on:
+  workflow_dispatch:
+    inputs:
+      composition:
+        description: "Remotion Composition ID (e.g. NvidiaV5, NvidiaV4, Main)"
+        required: true
+        default: "NvidiaV5"
+        type: string
+      video_dir:
+        description: "Folder in 02-videos/ (e.g. current, nvidia-v4) for voice + sfx-events.json"
+        required: false
+        default: "current"
+        type: string
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: "engine/package-lock.json"
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install FFmpeg & Remotion system deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg bc libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2t64 || \
+          sudo apt-get install -y ffmpeg bc libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2
+
+      - name: Run Stick3D setup
+        run: bash 00-setup/setup.sh
+
+      - name: Prepare voice & SFX (if present)
+        run: |
+          VID_DIR="02-videos/${{ inputs.video_dir }}"
+          if [ -f "$VID_DIR/script.txt" ]; then
+            VOICE_FILE=$(ls "$VID_DIR"/voiceover.* 2>/dev/null | head -n 1 || true)
+            if [ -n "$VOICE_FILE" ]; then
+              python3 tools/prep_voice.py "$VOICE_FILE" "$VID_DIR/script.txt" "$VID_DIR"
+            fi
+          fi
+          if [ -f "$VID_DIR/sfx-events.json" ] && [ -f "engine/public/voice.wav" ]; then
+            python3 tools/mix_sfx.py engine/public/voice.wav "$VID_DIR/sfx-events.json" engine/public/mix.wav sfx
+          fi
+
+      - name: Render video with Remotion
+        run: |
+          GL=$(cat .gl-flag)
+          mkdir -p 99-exports
+          cd engine
+          npx remotion render "${{ inputs.composition }}" ../99-exports/video-muted.mp4 --gl="$GL" --concurrency=4 --muted
+
+      - name: Mux audio
+        run: |
+          AUDIO="engine/public/mix.wav"
+          if [ ! -f "$AUDIO" ]; then
+            AUDIO="engine/public/voice.wav"
+          fi
+          if [ -f "$AUDIO" ]; then
+            ffmpeg -y -i 99-exports/video-muted.mp4 -i "$AUDIO" -c:v copy -c:a aac -b:a 192k -shortest 99-exports/final-video.mp4
+          else
+            cp 99-exports/video-muted.mp4 99-exports/final-video.mp4
+          fi
+          ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 99-exports/final-video.mp4
+
+      - name: Upload final MP4
+        uses: actions/upload-artifact@v4
+        with:
+          name: stick3d-final-video
+          path: 99-exports/final-video.mp4
+          retention-days: 14
