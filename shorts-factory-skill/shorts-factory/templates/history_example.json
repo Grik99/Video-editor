@@ -1,0 +1,6 @@
+[
+  {"slug": "prima_01_example", "bg": "<background file stem or ?>", "layout": "single",
+   "genre_it": "Storia / curiosità", "topic_it": "Argomento esatto in italiano",
+   "photo_it": "Cosa mostra la foto", "top": "Testo sopra (EN)", "comment": "Commento (EN)",
+   "title": "?", "sound": "?"}
+]

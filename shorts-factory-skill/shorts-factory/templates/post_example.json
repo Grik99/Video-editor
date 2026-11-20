@@ -1,0 +1,20 @@
+{
+  "rubric": "heartbreaking",
+  "category": "sad / touching",
+  "genre_it": "Triste / commovente",
+  "layout": "tb",
+  "top": "After his owner died at work in 1925, Hachiko kept waiting for him at Shibuya Station every single day for almost 10 years. In 2015, a new statue finally reunited them.",
+  "comment": "He waited almost 10 years for someone who was never coming back. We don't deserve dogs.",
+  "images": ["work/img/hachiko_shibuya.jpg", "work/img/hachiko_reunion.jpg"],
+  "focus": ["62% 45%", "50% 40%"],
+  "topic_it": "Hachiko aspettò il padrone morto (1925) alla stazione di Shibuya per quasi 10 anni; statua della 'riunione' nel 2015",
+  "photo_it": "Statua di Hachiko a Shibuya (sopra) + statua con il prof. Ueno all'Università di Tokyo (sotto)",
+  "image_sources": ["https://media.timeout.com/images/105371157/image.jpg", "https://www.tokyoweekender.com/wp-content/uploads/2022/05/Hidesaburo-Ueno.jpg"],
+  "sources": ["https://www.timeout.com/tokyo/blog/10-things-you-didnt-know-about-hachiko-081915"],
+  "title": "He waited at the station for almost 10 years for a man who never returned",
+  "description": "After his owner died in 1925, Hachiko waited for him at Shibuya Station every day for almost 10 years. In 2015 the University of Tokyo unveiled a statue of them reunited. <DESCRIPTION FIXED LINE> #shorts #hachiko #dog #truestory #viral #<brand>",
+  "tags": ["hachiko", "hachiko story", "hachiko full story", "hachiko statue", "hachiko loyal dog story"],
+  "sound": "<one of the user's saved sounds>",
+  "day": 1,
+  "slot": "20:00"
+}
