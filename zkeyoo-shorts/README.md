@@ -44,7 +44,7 @@ Gli sfondi si contano in ordine di file (01, 02, 05, 06, …; 03 e 04 non esisto
    - `comment`: la battuta sotto, nel fake tweet di Zkeyoo, in 1-2 righe nel tono di Hiroo (ironica, empatica o "unpopular opinion"). Emoji solo a volte (vedi la regola sopra).
 5. **Metadati da vidIQ** (formato da consegnare):
    - **Titolo**: `vidiq_generate_titles` (type short). Scegli il migliore che sia anche vero. **Mai hashtag nel titolo.**
-   - **Descrizione**: 1-2 frasi, poi sempre la frase fissa "Picked, fact-checked and captioned by me, with my own take on every story.", poi gli hashtag, l'ultimo sempre `#zkeyoo`.
+   - **Descrizione**: 1-2 frasi, poi sempre la frase fissa "All stories are independently researched, fact-checked, and transformed through original scripting, editing, and commentary for educational and entertainment purposes.", poi gli hashtag, l'ultimo sempre `#zkeyoo`.
    - **Tag**: 5 dalla `vidiq_keyword_research`.
    - **Suono**: uno tra quelli salvati dall'utente: Every Breath You Take (The Police), Sultans Of Swing (Dire Straits), Creep (Radiohead), Monster (Skillet), Beat Automotivo Tan Tan Tan Viral (WZ Beat), Chess (Type Beat) (Slowed) (joyful), Oh Klahoma (Jack Stauber), it's like i'm not even here (mthu), Angel Of My Dreams (JADE), All I Want for Christmas Is You (Mariah Carey), Coming Up Roses (Harry Styles).
    - **Orari di pubblicazione** (ora italiana, 6 al giorno): 14:00, 17:00, 20:00, 23:00, 02:00, 05:00. Corrispondono a New York 08:00, 11:00, 14:00, 17:00, 20:00, 23:00 e a Los Angeles 05:00, 08:00, 11:00, 14:00, 17:00, 20:00. Gli slot si assegnano in ordine; 02:00 e 05:00 sono già il giorno dopo. Nei campi `day` e `slot` del post vanno il giorno di pubblicazione e l'orario italiano.
