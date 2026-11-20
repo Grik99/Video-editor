@@ -16,6 +16,8 @@ Shorts da 6 secondi in stile "post + fake tweet" per il canale **Zkeyoo** (@zkey
 6. **Emoji nei commenti: non sempre.** Al massimo circa la metà dei commenti ne ha una, e mai la stessa di fila.
 
 ## Rotazione sfondi
+**Avviso ultimo sfondo (richiesta dell'utente):** quando si usa l'ultimo sfondo (il 30) oppure il prossimo sfondo della rotazione fa ripartire dall'01, avvisa l'utente nel messaggio di consegna, prima di continuare. Gli sfondi disponibili sono 28 (01, 02, 05–30).
+
 Gli sfondi si contano in ordine di file (01, 02, 05, 06, …; 03 e 04 non esistono). I 9 video dell'utente hanno usato 01–11. Il prossimo è sempre in `state.json` e nel foglio Riepilogo dell'Excel.
 
 ## Ricerca e criteri dei video
