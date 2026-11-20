@@ -71,7 +71,11 @@ Gli sfondi si contano in ordine di file (01, 02, 05, 06, …; 03 e 04 non esisto
 - Elowen1278 `UC6HAG2ThRK6a8V9WVt7ybDQ`
 - Zoom Lens `UCD-leb3afSq0ugWFy3G3qqw`
 
-Nell'app vidIQ dell'utente ci sono anche StaticSw…, little cru… e Candy-J5V. Il vidIQ collegato qui è sul canale "Grik", non su Zkeyoo.
+- StaticSway `UCps2m5y_MSlRsJiUsYRvLbA`
+- little crumbs `UCO4R_DbLcUxLDdarwuE9Jpg`
+- Candy-J5V `UCeJUxtNxq-VHT2LALohc_nw`
+
+vidIQ è collegato al canale **Zkeyoo** (`UCDrAa6j3kpvjK6GFwkaw8Xg`, @zkeyooreal). I competitor ufficiali in vidIQ sono Hiroo, GrandmaRunner, StaticSway, little crumbs e Candy-J5V (`vidiq_list_competitors`).
 
 ## File
 - `posts/*.json`: un file per Short, con testi, foto, layout, sfondo, metadati e fonti. Serve anche come storico.
