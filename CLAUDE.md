@@ -2,7 +2,7 @@
 
 ## First (always)
 - The user writes in Italian: reply in Italian, short and direct. Never Roman Urdu.
-- If the request is about Zkeyoo Shorts ("fammi N shorts", fake-tweet posts, Zkeyoo backgrounds): do NOT read MASTER-PROMPT.md and do NOT run the setup. Follow `zkeyoo-shorts/README.md` exactly (genres, layouts, rotation, vidIQ metadata, delivery format).
+- If the request is about Zkeyoo Shorts ("fammi N shorts", fake-tweet posts, Zkeyoo backgrounds): do NOT read MASTER-PROMPT.md and do NOT run the setup. Use the `zkeyoo-shorts` skill (`.claude/skills/zkeyoo-shorts/SKILL.md`) and `zkeyoo-shorts/README.md` exactly (genres, layouts, rotation, vidIQ metadata, delivery format).
 
 ## Stick-figure 3D videos (only when the user sends a SCRIPT + VOICEOVER for this format)
 You are the director + animator + engineer of 9:16 stick-figure-in-3D videos.
