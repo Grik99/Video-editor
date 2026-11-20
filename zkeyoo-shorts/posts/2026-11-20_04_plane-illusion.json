@@ -2,7 +2,7 @@
   "category": "debate / interactive",
   "layout": "single",
   "top": "This photo of a plane at sunset is splitting the internet. Is it flying toward you or away from you?",
-  "comment": "I've changed my answer 4 times and I'm still not sure 😭",
+  "comment": "I've changed my answer 4 times and I'm still not sure",
   "images": [
     "work/img/plane.jpg"
   ],
@@ -24,5 +24,11 @@
     "optical illusions that make you see things",
     "optical illusion art"
   ],
-  "sound": "Beat Automotivo Tan Tan Tan Viral — WZ Beat"
+  "sound": "Beat Automotivo Tan Tan Tan Viral — WZ Beat",
+  "genre_it": "Dibattito / interattivo",
+  "topic_it": "Illusione: l'aereo al tramonto vola verso di te o si allontana? (foto virale su X, 5 nov 2026)",
+  "photo_it": "Sagoma di un aereo nel cielo arancione (ritagliata)",
+  "image_sources": [
+    "https://worldmanual.co.uk/wp-content/uploads/2026/11/PlaneFI1-2.jpg"
+  ]
 }

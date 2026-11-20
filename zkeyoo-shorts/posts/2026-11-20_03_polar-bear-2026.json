@@ -3,7 +3,7 @@
   "category": "trend / meme",
   "layout": "lr",
   "top": "In 2023, this polar bear went viral with the caption: \"This is a November meme from 2026. You won't understand it yet.\"\n\nIt's officially November 2026.",
-  "comment": "We waited 3 years for this and I still don't get it 😭",
+  "comment": "We waited 3 years for this and I still don't get it",
   "images": [
     "work/img/polarbear_orig.png",
     "work/img/polarbear_art.png"
@@ -27,5 +27,12 @@
     "viral polar bear",
     "polar bear lore"
   ],
-  "sound": "Chess (Type Beat) (Slowed) — joyful"
+  "sound": "Chess (Type Beat) (Slowed) — joyful",
+  "genre_it": "Trend / meme",
+  "topic_it": "Meme 'Polar Bear 2026' (TikTok russo, 2023): 'meme di novembre 2026, non lo capirete ancora'. Ora è novembre 2026",
+  "photo_it": "Orso polare nella neve con la didascalia russa originale + variante 'arte del 2026'",
+  "image_sources": [
+    "https://i.kym-cdn.com/photos/images/original/002/666/536/cdd.png",
+    "https://i.kym-cdn.com/photos/images/original/002/666/507/2b7.png"
+  ]
 }

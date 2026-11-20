@@ -74,6 +74,9 @@ def main():
     still = os.path.join(ROOT, "work", slug + "_still.jpg")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", "3", "-i", out, "-frames:v", "1", "-q:v", "3", still], check=True)
     print("video:", out, "| background:", os.path.basename(bg))
+    # keep the Excel tracker in sync with every video made
+    r = subprocess.run([sys.executable, os.path.join(ROOT, "update_tracker.py")], capture_output=True, text=True)
+    print(r.stdout.strip().splitlines()[-1] if r.returncode == 0 else "tracker update FAILED: " + r.stderr[-400:])
 
 
 if __name__ == "__main__":

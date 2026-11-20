@@ -12,7 +12,7 @@
     "https://mymodernmet.com/chicago-the-bean-sculpture-moving-stunt/",
     "https://www.deccanchronicle.com/world/hundreds-gather-in-chicago-to-move-the-bean-seven-inches-in-bizarre-viral-stunt-2003198"
   ],
-  "bg": 10,
+  "bg": 16,
   "slot": "17:00",
   "title": "They actually tried to save a man inside The Bean",
   "description": "Hundreds of people tried to push Chicago's Bean 7 inches to the left after a viral invite claimed a man was trapped inside. It didn't budge. #shorts #chicago #thebean #funny #viral #zkeyoo",
@@ -24,5 +24,11 @@
     "chicago bean sculpture"
   ],
   "sound": "Oh Klahoma — Jack Stauber",
-  "day": 1
+  "day": 1,
+  "genre_it": "Divertente / virale",
+  "topic_it": "Centinaia di persone provano a spostare The Bean di 7 pollici per 'liberare' un uomo intrappolato dentro (Chicago, 8 nov 2026)",
+  "photo_it": "Vista aerea della folla attorno a The Bean",
+  "image_sources": [
+    "https://www.deccanchronicle.com/h-upload/2026/11/10/2111325-hws1vbkwqaaurbi.jpg"
+  ]
 }

@@ -2,7 +2,23 @@
 
 Shorts da 6 secondi in stile "post + fake tweet" per il canale **Zkeyoo** (@zkeyooreal). Con l'utente si parla in italiano; i testi dei video sono in inglese US.
 
-## Richiesta "fammi N shorts"
+## Pipeline definitiva (decisa dall'utente)
+1. **"Dammi N idee"**: cerca sul web, sui social e tra i competitor i migliori candidati del momento (vedi Ricerca qui sotto). Prima di proporli controlla `Zkeyoo_Shorts_tracker.xlsx` / `history_user.json` / `posts/`: argomenti simili vanno bene, uguali no.
+   Per ogni idea manda:
+   - numero, genere e argomento in italiano;
+   - il testo sopra in inglese (bozza);
+   - l'immagine: un foglio con le anteprime numerate, inviato come file;
+   - il link della foto e il link della fonte.
+2. **L'utente controlla e approva** (es. "ok 1, 3, 5"). Non fare video senza approvazione.
+3. **Video degli approvati** secondo i criteri qui sotto, poi invio degli MP4 e dei metadati.
+4. **Excel di tracciamento** `Zkeyoo_Shorts_tracker.xlsx`: argomento esatto, foto, titolo, sfondo e il resto, una riga per video, compresi i 9 video fatti prima dall'utente (`history_user.json`). Si rigenera da solo a ogni `make_short.py`; dopo ogni giro mandalo aggiornato all'utente.
+5. **Controllo dei fatti, sempre**: ogni cifra, data, nome e citazione in testi, titoli e descrizioni deve essere confermato da almeno una fonte affidabile (meglio due). Se una cosa non è verificabile, toglila o riformulala; non arrotondare in modo scorretto ("quasi 10 anni", non "10 anni").
+6. **Emoji nei commenti: non sempre.** Al massimo circa la metà dei commenti ne ha una, e mai la stessa di fila.
+
+## Rotazione sfondi
+Gli sfondi si contano in ordine di file (01, 02, 05, 06, …; 03 e 04 non esistono). I 9 video dell'utente hanno usato 01–11. Il prossimo è sempre in `state.json` e nel foglio Riepilogo dell'Excel.
+
+## Ricerca e criteri dei video
 1. **Ricerca.** Cerca i post migliori del momento sul web, sui social (X, Reddit, Instagram, TikTok) e sui canali YouTube simili.
    - Usa vidIQ con `vidiq_outliers` (contentType short, publishedWithin thisWeek) sui competitor elencati sotto e `vidiq_channel_videos` sul singolo canale.
    - Puoi riprendere i post dei competitor che funzionano, ma riscrivi sempre il testo sopra e il commento. La foto va presa dalla fonte originale, mai dal video del competitor.
@@ -23,7 +39,7 @@ Shorts da 6 secondi in stile "post + fake tweet" per il canale **Zkeyoo** (@zkey
    `focus` (es. `"50% 30%"`) decide quale parte della foto resta visibile. Evita stock, watermark di altre testate e foto di minori dove possibile. Le foto ufficiali o libere (NASA, enti pubblici) sono le migliori.
 4. **Testi** (inglese US):
    - `top`: il commento sopra (la notizia o il post) in 1-4 righe. Se il post originale ha già un testo, usa quello.
-   - `comment`: la battuta sotto, nel fake tweet di Zkeyoo, in 1-2 righe con un emoji, nel tono di Hiroo (ironica, empatica o "unpopular opinion").
+   - `comment`: la battuta sotto, nel fake tweet di Zkeyoo, in 1-2 righe nel tono di Hiroo (ironica, empatica o "unpopular opinion"). Emoji solo a volte (vedi la regola sopra).
 5. **Metadati da vidIQ** (formato da consegnare):
    - **Titolo**: `vidiq_generate_titles` (type short). Scegli il migliore che sia anche vero. **Mai hashtag nel titolo.**
    - **Descrizione**: 1-2 frasi più gli hashtag, l'ultimo sempre `#zkeyoo`.
