@@ -59,6 +59,7 @@ def main():
         "images": [os.path.join(ROOT, p) for p in spec["images"]],
         "focus": spec.get("focus", []), "layout": spec.get("layout"), "zone": [round(z0 * k), round(z1 * k)],
         "out": overlay, "brand": BRAND,
+        "rubric": json.load(open(os.path.join(ROOT, "rubrics.json"))).get(spec["rubric"]) if spec.get("rubric") else None,
     }
     rpath = os.path.join(ROOT, "work", slug + "_render.json")
     json.dump(rspec, open(rpath, "w"), ensure_ascii=False)

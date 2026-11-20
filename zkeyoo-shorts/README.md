@@ -50,6 +50,13 @@ Gli sfondi si contano in ordine di file (01, 02, 05, 06, …; 03 e 04 non esisto
    - **Orari di pubblicazione** (ora italiana, 6 al giorno): 14:00, 17:00, 20:00, 23:00, 02:00, 05:00. Corrispondono a New York 08:00, 11:00, 14:00, 17:00, 20:00, 23:00 e a Los Angeles 05:00, 08:00, 11:00, 14:00, 17:00, 20:00. Gli slot si assegnano in ordine; 02:00 e 05:00 sono già il giorno dopo. Nei campi `day` e `slot` del post vanno il giorno di pubblicazione e l'orario italiano.
 6. **Render**: `python3 make_short.py posts/<file>.json`. Poi controlla il fotogramma `work/<file>_still.jpg` e invia gli MP4.
 
+## Regole aggiunte dall'utente
+- **Commento più ricco:** oltre alla battuta, aggiungi un dettaglio o un contesto vero che nel post non c'è (verificato con le fonti). Restano 1-3 righe.
+- **Domanda nel commento ogni tanto** (circa 1 video su 3), per stimolare i commenti: "Who's right?", "What would you do?".
+- **Foto:** libere da diritti quando possibile (NASA, enti pubblici, Wikimedia), ma la priorità è la qualità virale. Se la foto migliore non è libera, si usa lo stesso.
+- **Rubriche:** ogni post ha una rubrica (`"rubric"` nel file del post; elenco e colori in `rubrics.json`). Compare come etichetta colorata in alto nella card, senza schermate extra: il video resta da 6 s e il primo fotogramma è già il post. Alterna le rubriche tra un video e l'altro.
+- **6 video al giorno** per ora.
+
 ## Competitor (YouTube)
 - Hiroo @OnlyHiro `UCEGlyjtuJE09nQ6revb8BqA`
 - GrandmaRunner `UClDyj3P95ScToj9P1CDbwGQ`

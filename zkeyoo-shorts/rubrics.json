@@ -1,0 +1,13 @@
+{
+  "_info": "Rubriche: etichetta colorata in alto nella card. La chiave va nel campo \"rubric\" del post.",
+  "wait-what":      {"name": "WAIT, WHAT?",          "color": "#E11D48", "genre": "Notizia strana / assurda"},
+  "faith":          {"name": "FAITH IN HUMANITY",    "color": "#16A34A", "genre": "Storie positive, gentilezza"},
+  "heartbreaking":  {"name": "HEARTBREAKING",        "color": "#475569", "genre": "Fatti tristi / commoventi"},
+  "unpopular":      {"name": "UNPOPULAR OPINION",    "color": "#EA580C", "genre": "Drama / dibattito"},
+  "you-decide":     {"name": "YOU DECIDE",           "color": "#7C3AED", "genre": "Interattivo: chi ha ragione, quale scegli, illusioni"},
+  "history":        {"name": "HISTORY HITS DIFFERENT","color": "#92400E", "genre": "Storia / foto storiche"},
+  "did-you-know":   {"name": "DID YOU KNOW?",        "color": "#0284C7", "genre": "Curiosità e fatti"},
+  "celeb":          {"name": "CELEB FILES",          "color": "#DB2777", "genre": "Celebrità / curiosità"},
+  "trending":       {"name": "TRENDING NOW",         "color": "#DC2626", "genre": "Trend, meme, attualità calda"},
+  "lol":            {"name": "INTERNET WON TODAY",   "color": "#CA8A04", "genre": "Divertente / virale"}
+}

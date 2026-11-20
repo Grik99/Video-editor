@@ -63,8 +63,11 @@ const html = `<!doctype html><html><head><meta charset="utf-8"><style>
   .nm{font-size:calc(33px*var(--s));font-weight:700;line-height:1.1}
   .hd{font-size:calc(25px*var(--s));color:#536471;line-height:1.2;margin-top:2px}
   #cm{margin-top:calc(20px*var(--s))}
+  #rb{display:inline-block;color:#fff;font-weight:800;font-size:calc(21px*var(--s));letter-spacing:1.2px;
+      padding:7px 14px 6px;border-radius:9px;margin-bottom:calc(16px*var(--s));line-height:1.1}
 </style></head><body>
 <div id="card">
+  ${spec.rubric ? `<div id="rb" style="background:${spec.rubric.color}">${esc(spec.rubric.name)}</div>` : ''}
   ${spec.top ? `<p class="t" id="top">${esc(spec.top)}</p>` : ''}
   <div id="media">${cells}</div>
   <div id="who"><img src="${fileUrl(spec.brand.logo)}"><div><div class="nm">${esc(spec.brand.name)}</div><div class="hd">${esc(spec.brand.handle)}</div></div></div>
