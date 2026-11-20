@@ -57,7 +57,7 @@ def main():
     rspec = {
         "top": spec.get("top", ""), "comment": spec["comment"],
         "images": [os.path.join(ROOT, p) for p in spec["images"]],
-        "focus": spec.get("focus", []), "zone": [round(z0 * k), round(z1 * k)],
+        "focus": spec.get("focus", []), "layout": spec.get("layout"), "zone": [round(z0 * k), round(z1 * k)],
         "out": overlay, "brand": BRAND,
     }
     rpath = os.path.join(ROOT, "work", slug + "_render.json")
