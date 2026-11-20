@@ -1,0 +1,115 @@
+{
+  "_info": "Free vertical zone [top, bottom] for the card, in 720x1280 coordinates (the renderer scales them). The card is centred inside the zone and shrinks its photo to fit.",
+  "zkeyoo_01_peek_wall": [
+    60,
+    860
+  ],
+  "zkeyoo_02_hang_top": [
+    170,
+    1235
+  ],
+  "zkeyoo_05_popcorn_movie": [
+    185,
+    870
+  ],
+  "zkeyoo_06_skate_rail": [
+    225,
+    870
+  ],
+  "zkeyoo_07_ufo": [
+    160,
+    1040
+  ],
+  "zkeyoo_08_paper_plane": [
+    175,
+    990
+  ],
+  "zkeyoo_09_dj": [
+    200,
+    895
+  ],
+  "zkeyoo_10_gamer": [
+    240,
+    885
+  ],
+  "zkeyoo_11_phone_chill_top": [
+    250,
+    1230
+  ],
+  "zkeyoo_12_sleepy_cloud": [
+    300,
+    1065
+  ],
+  "zkeyoo_13_rain_umbrella": [
+    200,
+    790
+  ],
+  "zkeyoo_14_balloons_parachute": [
+    60,
+    1220
+  ],
+  "zkeyoo_15_rocket_ride": [
+    60,
+    1220
+  ],
+  "zkeyoo_16_basketball": [
+    180,
+    890
+  ],
+  "zkeyoo_17_four_corners": [
+    160,
+    970
+  ],
+  "zkeyoo_18_money_rain": [
+    60,
+    940
+  ],
+  "zkeyoo_19_fishing_boot": [
+    310,
+    1080
+  ],
+  "zkeyoo_20_selfie_top": [
+    250,
+    1230
+  ],
+  "zkeyoo_21_coffee_hyper": [
+    60,
+    950
+  ],
+  "zkeyoo_22_ice_cream": [
+    60,
+    850
+  ],
+  "zkeyoo_23_snowman": [
+    60,
+    870
+  ],
+  "zkeyoo_24_tower_three": [
+    60,
+    640
+  ],
+  "zkeyoo_25_rock_guitar": [
+    160,
+    950
+  ],
+  "zkeyoo_26_hide_and_seek": [
+    60,
+    1220
+  ],
+  "zkeyoo_27_cat_pet": [
+    210,
+    830
+  ],
+  "zkeyoo_28_binoculars": [
+    260,
+    980
+  ],
+  "zkeyoo_29_subscribe_press": [
+    140,
+    860
+  ],
+  "zkeyoo_30_disco": [
+    150,
+    900
+  ]
+}
