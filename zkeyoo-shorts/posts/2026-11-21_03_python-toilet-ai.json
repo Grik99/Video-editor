@@ -1,0 +1,25 @@
+{
+  "rubric": "wait-what",
+  "genre_it": "Notizia assurda / AI",
+  "category": "weird news",
+  "layout": "single",
+  "top": "A 9-year-old in Italy used an AI app to fake a photo of a python in a toilet. Police and firefighters searched for about 2 days.",
+  "comment": "Pythons aren't native to Italy, which might have been the first clue.",
+  "images": ["work/img/python_bro.jpg"],
+  "focus": ["50% 50%"],
+  "topic_it": "Bambino di 9 anni a Castelfidardo (Ancona) crea con l'AI la foto di un pitone nel water: ricerche di vigili del fuoco e Carabinieri forestali per circa 2 giorni, poi confessa",
+  "photo_it": "Illustrazione dell'articolo BroBible (pitone nel water)",
+  "image_sources": ["https://brobible.com/wp-content/uploads/2026/11/python-toilet.jpg"],
+  "sources": [
+    "https://brobible.com/culture/article/police-italy-duped-python-search-ai-generated-toilet-picture/",
+    "https://www.complex.com/life/a/helen-storms/ai-snake-prank-police-search",
+    "https://www.dexerto.com/entertainment/9-year-old-sparks-48-hour-snake-hunt-after-fooling-firefighters-with-ai-python-in-toilet-3428641/"
+  ],
+  "day": 2,
+  "slot": "20:00",
+  "bg": 20,
+  "title": "Police hunt fake python after 9-year-old uses AI #ai #police #fail",
+  "description": "A 9-year-old in Castelfidardo, Italy, used an AI app to fake a photo of a python in a toilet, and the search lasted about two days. All stories are independently researched, fact-checked, and transformed through original scripting, editing, and commentary for educational and entertainment purposes. #shorts #ai #police #fail #python #weirdnews #zkeyoo",
+  "tags": ["snake in toilet", "ai prank", "ball python", "animal story", "ai generated image"],
+  "sound": "Oh Klahoma — Jack Stauber"
+}
