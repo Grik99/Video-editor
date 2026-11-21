@@ -57,6 +57,12 @@ Gli sfondi si contano in ordine di file (01, 02, 05, 06, …; 03 e 04 non esisto
 - **Rubriche:** ogni post ha una rubrica (`"rubric"` nel file del post; elenco e colori in `rubrics.json`). Compare come etichetta colorata in alto nella card, senza schermate extra: il video resta da 6 s e il primo fotogramma è già il post. Alterna le rubriche tra un video e l'altro.
 - **6 video al giorno** per ora.
 
+## Stile da cercare (indicazione dell'utente, da StaticSway e simili)
+Più post in questo stile: **relatable** (messaggi, tweet, thread divertenti), **interattivi** (indovinelli, "quanti triangoli", "quanti buchi ha la maglietta", scegli A/B/C, illusioni), **segnali e cartelli buffi**, **animali e famiglia**, **scherzi**. Poi anche cose **più serie e virali**, **trend** e **notizie calde** del momento. Mix in ogni giro.
+- Gli indovinelli li disegno io con il codice (grafica originale) e il risultato lo verifico per calcolo, mai a occhio. La risposta va nella descrizione.
+- Tweet solo testo: `layout` senza foto (`"images": []`), citando l'autore nella descrizione ("Tweet by @handle").
+- Le notizie "calde" si verificano con almeno 2 testate; i riepiloghi di notizie (aggregatori) possono sbagliare. Esempio: il "Danimarca espelle un diplomatico russo" di un riepilogo era falso.
+
 ## Competitor (YouTube)
 - Hiroo @OnlyHiro `UCEGlyjtuJE09nQ6revb8BqA`
 - GrandmaRunner `UClDyj3P95ScToj9P1CDbwGQ`

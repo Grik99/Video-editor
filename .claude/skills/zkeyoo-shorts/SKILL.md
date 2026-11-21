@@ -23,6 +23,12 @@ Everything lives in `zkeyoo-shorts/` (the detailed rules are in `zkeyoo-shorts/R
 - Before proposing, check `history_user.json`, `posts/` and the tracker: similar topics OK, **identical topic NO**.
 - **Only true stories.** Skip hoaxes (e.g. "11-year-old hacked a Swiss bank").
 
+### Style to look for (user's direction, from StaticSway and similar)
+More posts like: **relatable** (texts, tweets, funny threads), **interactive** (riddles, "how many triangles", "how many holes in the T-shirt", A/B/C choices, illusions), **funny signs**, **animals/family**, **pranks**; plus **more serious viral**, **trends** and **hot news**. Mix them in every batch.
+- Riddles are drawn by code (original artwork) and the answer is verified by brute-force calculation, never by eye. Put the answer in the description.
+- Text-only tweets: no photo (`"images": []`), credit the author in the description ("Tweet by @handle").
+- Hot news needs ≥2 outlets; news aggregators/briefings can be wrong (a "Denmark expels Russian diplomat" briefing item was false).
+
 ### Idea message format (one per idea)
 `N — rubrica — genere — argomento (IT)` · draft top text (EN) · photo link · source link(s) · proposed layout.
 Also send ONE contact-sheet image with all candidate photos numbered (build it with PIL into `out/`, send with SendUserFile).

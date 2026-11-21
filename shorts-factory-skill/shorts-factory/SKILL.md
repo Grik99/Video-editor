@@ -54,6 +54,12 @@ history · did-you-know · celebrity · hot current events · faith in humanity.
 Idea message (one block per idea): `N — RUBRIC — genre — topic` · draft top text · proposed layout · photo link · source link(s).
 Also build ONE contact sheet with all candidate photos numbered (Pillow) and send it as a file.
 
+### Style to look for (user's direction, from StaticSway and similar)
+More posts like: **relatable** (texts, tweets, funny threads), **interactive** (riddles, "how many triangles", "how many holes in the T-shirt", A/B/C choices, illusions), **funny signs**, **animals/family**, **pranks**; plus **more serious viral**, **trends** and **hot news**. Mix them in every batch.
+- Riddles are drawn by code (original artwork) and the answer is verified by brute-force calculation, never by eye. Put the answer in the description.
+- Text-only tweets: no photo (`"images": []`), credit the author in the description ("Tweet by @handle").
+- Hot news needs ≥2 outlets; news aggregators/briefings can be wrong (a "Denmark expels Russian diplomat" briefing item was false).
+
 ## 2. After approval: make each video
 1. Download photos into `work/img/` (curl with a browser User-Agent; use the article `og:image`; WordPress images via
    `i0.wp.com/<host>/<path>`; NASA `images-api.nasa.gov` is public domain; KYM `i.kym-cdn.com/photos/images/original/...`).
