@@ -45,7 +45,7 @@ Gli sfondi si contano in ordine di file (01, 02, 05, 06, …; 03 e 04 non esisto
 5. **Metadati da vidIQ** (formato da consegnare):
    - **Titolo**: `vidiq_generate_titles` (type short). Scegli il migliore che sia anche vero. **Nel titolo vanno 3 hashtag virali alla fine** (es. `... #hachiko #dog #truestory`), titolo completo entro 100 caratteri.
    - **Descrizione**: 1-2 frasi, poi sempre la frase fissa "All stories are independently researched, fact-checked, and transformed through original scripting, editing, and commentary for educational and entertainment purposes.", poi gli hashtag, l'ultimo sempre `#zkeyoo`.
-   - **Tag**: 5 dalla `vidiq_keyword_research`.
+   - **Tag**: sempre ottimizzati con vidIQ. Per ogni video fai `vidiq_keyword_research` (mode research, più seed: l'argomento, il nome proprio e la categoria; se serve anche `matching_terms`/`rising`). Scegli 5 tag con volume alto e competizione bassa-media (`overall` alto) e che descrivano davvero il video; scarta quelli con volume 0, fuori tema o troppo generici. Mix: 1-2 larghi + 3 specifici. Nella consegna ogni tag ha la virgola finale ed è in un blocco copiabile a parte.
    - **Suono**: uno tra quelli salvati dall'utente: Every Breath You Take (The Police), Sultans Of Swing (Dire Straits), Creep (Radiohead), Monster (Skillet), Beat Automotivo Tan Tan Tan Viral (WZ Beat), Chess (Type Beat) (Slowed) (joyful), Oh Klahoma (Jack Stauber), it's like i'm not even here (mthu), Angel Of My Dreams (JADE), All I Want for Christmas Is You (Mariah Carey), Coming Up Roses (Harry Styles).
    - **Orari di pubblicazione** (ora italiana, 6 al giorno): 14:00, 17:00, 20:00, 23:00, 02:00, 05:00. Corrispondono a New York 08:00, 11:00, 14:00, 17:00, 20:00, 23:00 e a Los Angeles 05:00, 08:00, 11:00, 14:00, 17:00, 20:00. Gli slot si assegnano in ordine; 02:00 e 05:00 sono già il giorno dopo. Nei campi `day` e `slot` del post vanno il giorno di pubblicazione e l'orario italiano.
 6. **Render**: `python3 make_short.py posts/<file>.json`. Poi controlla il fotogramma `work/<file>_still.jpg` e invia gli MP4.
@@ -93,3 +93,5 @@ vidIQ è collegato al canale **Zkeyoo** (`UCDrAa6j3kpvjK6GFwkaw8Xg`, @zkeyooreal
 ## Descrizione del canale (approvata)
 just sharing relatable stories, funny threads, wild facts and internet brainrot. i find the good stuff so you don't have to.
 every post is hand-picked, fact-checked and captioned by me, with my own take on it. new shorts every day.
+
+- **Consegna sempre in chat** (non come file), ogni cosa in un blocco di codice copiabile: titolo, descrizione, un blocco per ogni tag (con la virgola finale), musica. I file (MP4, Excel) solo come allegati a parte.

@@ -81,7 +81,7 @@ Also build ONE contact sheet with all candidate photos numbered (Pillow) and sen
 - Title: `vidiq_generate_titles` (type short) → pick a high score that is **factually accurate**, **end the title with 3 viral hashtags** (full title ≤ 100 characters),
   no first person for reposted stories. If you fix it, check it with `vidiq_score_title`.
 - Description: 1–2 sentences + the fixed line from `config.json` + hashtags, last one `#<brand>`.
-- Tags: 5 from `vidiq_keyword_research` (mode research). Sound: one of the user's saved sounds. Slot: next publishing time.
+- Tags: **always optimized with vidIQ**. For each video run `vidiq_keyword_research` (mode research; several seeds: topic, proper name, category; `matching_terms`/`rising` if needed). Pick 5 tags with high volume and low-to-medium competition (high `overall`) that truly describe the video; drop zero-volume, off-topic or too generic ones. Mix 1–2 broad + 3 specific. In the delivery each tag has a trailing comma and its own copyable code block.
 Without vidIQ, write them by hand following the same rules.
 
 ### Delivery
@@ -100,3 +100,5 @@ by `tools/update_tracker.py`. Never edit it by hand: change the JSON and rerun. 
 YouTube's reused-content and inauthentic (mass-produced) content policies are the main risk for repost formats.
 Mitigations: real added commentary/context, own design and mascot backgrounds, rubrics, fact-checking, a channel
 description stating the curation work, varied genres and layouts. No guarantee.
+
+- Metadata is always delivered **in the chat** (not as files), each item in its own copyable code block: title, description, one block per tag (trailing comma), sound. Files (MP4, Excel) are attached separately.

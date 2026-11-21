@@ -55,7 +55,7 @@ Free photos (NASA, gov, Wikimedia) when possible, but **viral quality comes firs
   avoid first person ("we pranked…") for reposted stories. If you fix a title for accuracy, verify it with `vidiq_score_title`.
 - Description: 1–2 sentences + this fixed line, then hashtags ending with `#zkeyoo`:
   `All stories are independently researched, fact-checked, and transformed through original scripting, editing, and commentary for educational and entertainment purposes.`
-- Tags: 5 from `vidiq_keyword_research` (mode research).
+- Tags: **always optimized with vidIQ**. For each video run `vidiq_keyword_research` (mode research; several seeds: topic, proper name, category; `matching_terms`/`rising` if needed). Pick 5 tags with high volume and low-to-medium competition (high `overall`) that truly describe the video; drop zero-volume, off-topic or too generic ones. Mix 1–2 broad + 3 specific. In the delivery each tag has a trailing comma and its own copyable code block.
 - Sound: one of the user's saved sounds (list in README).
 - Schedule: 6 per day, Italian time **14:00, 17:00, 20:00, 23:00, 02:00, 05:00** (02/05 = next calendar day).
 
@@ -85,3 +85,5 @@ Never hand-edit it; change the JSON and rerun. Yellow cells = data missing from 
 ## Channel
 Description (approved): see README "Descrizione del canale". Monetization caveat already explained to the user:
 reused/inauthentic-content policies are the risk; the richer comment, rubrics, fact-checking and own design are the mitigations.
+
+- Metadata is always delivered **in the chat** (not as files), each item in its own copyable code block: title, description, one block per tag (trailing comma), sound. Files (MP4, Excel) are attached separately.
