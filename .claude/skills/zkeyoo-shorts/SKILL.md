@@ -26,7 +26,7 @@ Everything lives in `zkeyoo-shorts/` (the detailed rules are in `zkeyoo-shorts/R
 ### Style to look for (user's direction, from StaticSway and similar)
 More posts like: **relatable** (texts, tweets, funny threads), **interactive** (riddles, "how many triangles", "how many holes in the T-shirt", A/B/C choices, illusions), **funny signs**, **animals/family**, **pranks**; plus **more serious viral**, **trends** and **hot news**. Mix them in every batch.
 - Riddles are drawn by code (original artwork) and the answer is verified by brute-force calculation, never by eye. Put the answer in the description.
-- Text-only tweets: no photo (`"images": []`), credit the author in the description ("Tweet by @handle").
+- **Never a video/post without at least one image.** Text-only tweets must be paired with a relevant photo (original, archive or free); credit the tweet author in the description ("Tweet by @handle"). No fitting photo → drop the post.
 - Hot news needs ≥2 outlets; news aggregators/briefings can be wrong (a "Denmark expels Russian diplomat" briefing item was false).
 
 ### Idea message format (one per idea)
