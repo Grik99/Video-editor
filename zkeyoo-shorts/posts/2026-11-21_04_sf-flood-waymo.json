@@ -1,0 +1,37 @@
+{
+  "rubric": "wait-what",
+  "genre_it": "Notizia strana",
+  "category": "hot news / weird",
+  "layout": "single",
+  "top": "San Francisco got 2.31 inches of rain on Nov. 18, breaking a record from 1918. Waymo paused its robotaxis across the Bay Area after cars got stuck on flooded streets.",
+  "comment": "The self-driving cars survived a lot, but not a 108-year-old rain record 🌧️",
+  "images": [
+    "work/img/sf_flood.jpg"
+  ],
+  "focus": [
+    "50% 50%"
+  ],
+  "topic_it": "San Francisco: record di pioggia del 18 nov (2,31 pollici, battuto record del 1918); Waymo sospende i robotaxi bloccati negli allagamenti",
+  "photo_it": "Waymo in una strada allagata + auto nell'acqua a San Francisco (ABC7)",
+  "image_sources": [
+    "https://cdn.abcotvs.com/dip/images/20052425_111826-kgo-flooding-split-img.jpg"
+  ],
+  "sources": [
+    "https://abc7news.com/20052154/",
+    "https://www.ktvu.com/news/waymo-pauses-san-francisco-service-amid-severe-weather",
+    "https://www.engadget.com/2321312/waymo-pauses-service-in-san-francisco-after-robotaxis-get-stuck-on-flooded-streets/"
+  ],
+  "day": 2,
+  "slot": "23:00",
+  "bg": 21,
+  "title": "Why these robotaxis got stuck in the storm #sanfrancisco #waymo #selfdriving",
+  "description": "San Francisco got 2.31 inches of rain on November 18, breaking a record from 1918, and Waymo paused its robotaxis across the Bay Area after cars got stuck on flooded streets. All stories are independently researched, fact-checked, and transformed through original scripting, editing, and commentary for educational and entertainment purposes. #shorts #sanfrancisco #waymo #flood #technews #viral #zkeyoo",
+  "tags": [
+    "tech news",
+    "weather",
+    "waymo",
+    "robotaxi",
+    "autonomous vehicles"
+  ],
+  "sound": "Monster — Skillet"
+}

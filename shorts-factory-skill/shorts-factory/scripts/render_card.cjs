@@ -12,7 +12,7 @@ const spec = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'));
 const W = 1080, H = 1920, GAP = 6;
 // typographic quotes, then glue the last 2 words of every paragraph (no orphan word/emoji on the last line)
 const pretty = (s) => String(s || '')
-  .replace(/"([^"\n]*)"/g, '“$1”').replace(/(\w)'(\w)/g, '$1’$2').replace(/(^|\s)'/g, '$1‘').replace(/'/g, '’')
+  .replace(/"([^"\n]*)"/g, '“$1”').replace(/(\w)'(\w)/g, '$1’$2').replace(/(^|\s)'/g, '$1‘').replace(/'/g, '’').replace(/(\w)-(\w)/g, '$1\u2011$2')
   .split('\n').map((p) => {
     const w = p.split(' ');
     const k = w.length >= 6 ? 3 : w.length >= 3 ? 2 : 1; // how many trailing tokens stay together

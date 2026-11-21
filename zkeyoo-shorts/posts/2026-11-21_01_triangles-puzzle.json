@@ -1,0 +1,36 @@
+{
+  "rubric": "you-decide",
+  "genre_it": "Dibattito / interattivo",
+  "category": "interactive / puzzle",
+  "layout": "single",
+  "top": "How many triangles can you find in this picture? Count carefully. Answer in the pinned comment.",
+  "comment": "I counted three times and got three different answers. What's yours?",
+  "images": [
+    "work/img/triangles.png"
+  ],
+  "focus": [
+    "50% 50%"
+  ],
+  "topic_it": "Indovinello: quanti triangoli ci sono nella figura? (grafica originale; risposta 40)",
+  "photo_it": "Triangolo con 5 linee dal vertice e 4 linee orizzontali (disegnato da Claude)",
+  "image_sources": [
+    "(grafica originale)"
+  ],
+  "sources": [
+    "(calcolo: C(5,2) x 4 = 40, verificato con script)"
+  ],
+  "answer": "40",
+  "day": 2,
+  "slot": "14:00",
+  "bg": 18,
+  "title": "This puzzle is trickier than you think #brainteaser #puzzle #shorts",
+  "description": "How many triangles can you find in this picture? Count every size, not just the small ones. (Answer: 40) All stories are independently researched, fact-checked, and transformed through original scripting, editing, and commentary for educational and entertainment purposes. #shorts #puzzle #brainteaser #riddle #iqtest #viral #zkeyoo",
+  "tags": [
+    "riddles",
+    "math puzzle",
+    "iq test",
+    "brain teaser",
+    "can you solve it"
+  ],
+  "sound": "Chess (Type Beat) (Slowed) — joyful"
+}
