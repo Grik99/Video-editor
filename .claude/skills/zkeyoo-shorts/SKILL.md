@@ -51,7 +51,7 @@ single · lr · tb · row3 · t1b2 · l1r2 · 2x2 · l2r3. Vary them; not every 
 Free photos (NASA, gov, Wikimedia) when possible, but **viral quality comes first**: use the best photo anyway.
 
 ### Metadata (vidIQ)
-- Title: `vidiq_generate_titles` (type short). Pick a high score that is **factually accurate**; **never hashtags in the title**;
+- Title: `vidiq_generate_titles` (type short). Pick a high score that is **factually accurate**; **end the title with 3 viral hashtags** (full title ≤ 100 characters);
   avoid first person ("we pranked…") for reposted stories. If you fix a title for accuracy, verify it with `vidiq_score_title`.
 - Description: 1–2 sentences + this fixed line, then hashtags ending with `#zkeyoo`:
   `All stories are independently researched, fact-checked, and transformed through original scripting, editing, and commentary for educational and entertainment purposes.`

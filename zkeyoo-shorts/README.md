@@ -43,7 +43,7 @@ Gli sfondi si contano in ordine di file (01, 02, 05, 06, …; 03 e 04 non esisto
    - `top`: il commento sopra (la notizia o il post) in 1-4 righe. Se il post originale ha già un testo, usa quello.
    - `comment`: la battuta sotto, nel fake tweet di Zkeyoo, in 1-2 righe nel tono di Hiroo (ironica, empatica o "unpopular opinion"). Emoji solo a volte (vedi la regola sopra).
 5. **Metadati da vidIQ** (formato da consegnare):
-   - **Titolo**: `vidiq_generate_titles` (type short). Scegli il migliore che sia anche vero. **Mai hashtag nel titolo.**
+   - **Titolo**: `vidiq_generate_titles` (type short). Scegli il migliore che sia anche vero. **Nel titolo vanno 3 hashtag virali alla fine** (es. `... #hachiko #dog #truestory`), titolo completo entro 100 caratteri.
    - **Descrizione**: 1-2 frasi, poi sempre la frase fissa "All stories are independently researched, fact-checked, and transformed through original scripting, editing, and commentary for educational and entertainment purposes.", poi gli hashtag, l'ultimo sempre `#zkeyoo`.
    - **Tag**: 5 dalla `vidiq_keyword_research`.
    - **Suono**: uno tra quelli salvati dall'utente: Every Breath You Take (The Police), Sultans Of Swing (Dire Straits), Creep (Radiohead), Monster (Skillet), Beat Automotivo Tan Tan Tan Viral (WZ Beat), Chess (Type Beat) (Slowed) (joyful), Oh Klahoma (Jack Stauber), it's like i'm not even here (mthu), Angel Of My Dreams (JADE), All I Want for Christmas Is You (Mariah Carey), Coming Up Roses (Harry Styles).

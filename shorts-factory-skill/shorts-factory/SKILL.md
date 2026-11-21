@@ -78,7 +78,7 @@ Also build ONE contact sheet with all candidate photos numbered (Pillow) and sen
   `focus` per image = CSS object-position (e.g. "50% 30%") to keep the subject in frame.
 
 ### Metadata (vidIQ when connected)
-- Title: `vidiq_generate_titles` (type short) → pick a high score that is **factually accurate**, **no hashtags in the title**,
+- Title: `vidiq_generate_titles` (type short) → pick a high score that is **factually accurate**, **end the title with 3 viral hashtags** (full title ≤ 100 characters),
   no first person for reposted stories. If you fix it, check it with `vidiq_score_title`.
 - Description: 1–2 sentences + the fixed line from `config.json` + hashtags, last one `#<brand>`.
 - Tags: 5 from `vidiq_keyword_research` (mode research). Sound: one of the user's saved sounds. Slot: next publishing time.
