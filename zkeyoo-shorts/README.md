@@ -110,12 +110,12 @@ vidIQ è collegato al canale **Zkeyoo** (`UCDrAa6j3kpvjK6GFwkaw8Xg`, @zkeyooreal
 - `make_short.py`: crea il video (sfondo + card) in 1080×1920, 30 fps, 6 s, H.264 senza audio. L'utente aggiunge la musica nell'app YouTube.
 - `work/` e `out/` non vanno su git: contengono le immagini scaricate e gli MP4.
 
-- **Il post ben visibile conta più dello sfondo (regola dell'utente):** card sempre grande e leggibile; se copre i personaggi dello sfondo va bene. Mai rimpicciolirla o spostarla per mostrare più sfondo.
+- **Il post ben visibile conta più dello sfondo, ma con buon senso (regola dell'utente):** la card resta grande, leggibile e al centro in orizzontale. Se serve per non coprire troppo lo sfondo, è ammesso rimpicciolirla solo di poco, oppure spostarla pochissimo, solo su o giù. Mai spostarla di lato, mai rimpicciolirla molto, mai lasciarla piccola in una fascia stretta. Se copre un po' i personaggi va bene.
 
 ## Regole di layout
 - La card occupa il 76% della larghezza ed è centrata nella fascia libera dello sfondo. Se è troppo alta si riduce la foto, poi il testo.
 - La card resta tra y=110 e y=930 (su 1280), così non finisce sotto il titolo, il canale e i pulsanti dell'interfaccia di Shorts.
-- **Card grande e sempre al centro (scelta dell'utente).** Mai una card piccola schiacciata in una fascia stretta: se lo spazio libero dello sfondo è poco (es. il 24, torre di personaggi), si usa tutta la fascia 110–930 al centro anche se la card copre i personaggi. (`zones.json` accetta anche 4 valori `[y0, y1, x0, x1]` per spostare la card di lato, ma l'utente preferisce il centro.)
+- **Card grande e al centro (regola dell'utente):** vedi la regola sopra; solo piccoli ritocchi in verticale o una lieve riduzione, mai spostamenti laterali.
 - Negli screenshot di chat la battuta finale deve restare visibile: se il taglio la nasconde, ricomponi l'immagine (togli spazi vuoti e barre inutili).
 
 ## Descrizione del canale (approvata)

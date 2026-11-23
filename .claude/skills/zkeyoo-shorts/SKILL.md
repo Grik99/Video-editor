@@ -59,9 +59,9 @@ Also send ONE contact-sheet image with all candidate photos numbered (build it w
 ### Rubrics (`rubrics.json`, coloured badge at the top of the card, no extra screens)
 wait-what · faith · heartbreaking · unpopular · you-decide · history · did-you-know · celeb · trending · lol. Rotate them.
 
-- **Post visibility beats background (user's rule):** the card must always be big and fully readable; if it covers background characters, that is fine. Never shrink or move the card to show more of the background.
+- **Post visibility beats background, with common sense (user's rule):** the card stays big, readable and horizontally centred. To avoid covering too much of the background it may be shrunk only slightly, or moved very slightly up or down. Never sideways, never shrunk a lot, never left small in a narrow band. Covering a bit of the characters is fine.
 ### Layouts (`layout`)
-single · lr · tb · row3 · t1b2 · l1r2 · 2x2 · l2r3. **The card must always be big and centred** (user's choice): if a background leaves little free space (e.g. bg 24), use the full 110–930 band in the centre even if the card covers the characters. (`zones.json` also accepts `[y0,y1,x0,x1]` to move the card sideways, but the user prefers the centre.) Chat screenshots: the punchline must stay visible (recompose the image if the crop hides it). Vary layouts; not every post is one 16:9 photo. `focus` = object-position.
+single · lr · tb · row3 · t1b2 · l1r2 · 2x2 · l2r3. **The card must always be big and centred** (user's rule, see above): only a slight shrink or a very slight vertical shift is allowed. Chat screenshots: the punchline must stay visible (recompose the image if the crop hides it). Vary layouts; not every post is one 16:9 photo. `focus` = object-position.
 Free photos (NASA, gov, Wikimedia) when possible, but **viral quality comes first**: use the best photo anyway.
 
 ### Metadata (vidIQ)

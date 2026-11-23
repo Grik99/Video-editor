@@ -86,7 +86,7 @@ More posts like: **relatable** (texts, tweets, funny threads), **interactive** (
 ### Metadata (vidIQ when connected)
 - Title: `vidiq_generate_titles` (type short) → pick a high score that is **factually accurate**, **end the title with 3 viral hashtags** (full title ≤ 100 characters),
   no first person for reposted stories. If you fix it, check it with `vidiq_score_title`.
-- **Post visibility beats background (user's rule):** the card must always be big and fully readable; if it covers background characters, that is fine. Never shrink or move the card to show more of the background.
+- **Post visibility beats background, with common sense (user's rule):** the card stays big, readable and horizontally centred. To avoid covering too much of the background it may be shrunk only slightly, or moved very slightly up or down. Never sideways, never shrunk a lot, never left small in a narrow band. Covering a bit of the characters is fine.
 - Description (fixed structure): 1–2 sentences, newline, hashtags (last one `#<brand>`), blank line, then the fixed line from `config.json`. Stored as `core\nhashtags\n\nFIX`.
 - Tags: **always optimized with vidIQ**. For each video run `vidiq_keyword_research` (mode research; several seeds: topic, proper name, category; `matching_terms`/`rising` if needed). Pick 5 tags with high volume and low-to-medium competition (high `overall`) that truly describe the video; drop zero-volume, off-topic or too generic ones. Mix 1–2 broad + 3 specific. In the delivery each tag has a trailing comma and its own copyable code block.
 Without vidIQ, write them by hand following the same rules.
