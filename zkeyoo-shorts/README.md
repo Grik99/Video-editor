@@ -55,7 +55,14 @@ Shorts da 6 secondi in stile "post + fake tweet" per il canale **Zkeyoo** (@zkey
    - `comment`: la battuta sotto, nel fake tweet di Zkeyoo, in 1-2 righe nel tono di Hiroo (ironica, empatica o "unpopular opinion"). Emoji solo a volte (vedi la regola sopra).
 5. **Metadati da vidIQ** (formato da consegnare):
    - **Titolo**: `vidiq_generate_titles` (type short). Scegli il migliore che sia anche vero. **Nel titolo vanno 3 hashtag virali alla fine** (es. `... #hachiko #dog #truestory`), titolo completo entro 100 caratteri.
-   - **Descrizione**: 1-2 frasi, poi sempre la frase fissa "All stories are independently researched, fact-checked, and transformed through original scripting, editing, and commentary for educational and entertainment purposes.", poi gli hashtag, l'ultimo sempre `#zkeyoo`.
+   - **Descrizione** (struttura fissa, con righe vuote come qui sotto): 1-2 frasi; a capo gli hashtag (l'ultimo sempre `#zkeyoo`); riga vuota; poi la frase fissa "All stories are independently researched, fact-checked, and transformed through original scripting, editing, and commentary for educational and entertainment purposes."
+     Esempio:
+     ```
+     Satoru Takaba paid rent for 26 years on the Nagoya apartment where his wife was killed in 1999, to preserve the evidence. In 2025 the case was finally solved.
+     #shorts #coldcase #justice #truecrime #japan #zkeyoo
+
+     All stories are independently researched, fact-checked, and transformed through original scripting, editing, and commentary for educational and entertainment purposes.
+     ```
    - **Tag**: sempre ottimizzati con vidIQ. Per ogni video fai `vidiq_keyword_research` (mode research, più seed: l'argomento, il nome proprio e la categoria; se serve anche `matching_terms`/`rising`). Scegli 5 tag con volume alto e competizione bassa-media (`overall` alto) e che descrivano davvero il video; scarta quelli con volume 0, fuori tema o troppo generici. Mix: 1-2 larghi + 3 specifici. Nella consegna ogni tag ha la virgola finale ed è in un blocco copiabile a parte.
    - **Suono**: uno tra quelli salvati dall'utente: Every Breath You Take (The Police), Sultans Of Swing (Dire Straits), Creep (Radiohead), Monster (Skillet), Beat Automotivo Tan Tan Tan Viral (WZ Beat), Chess (Type Beat) (Slowed) (joyful), Oh Klahoma (Jack Stauber), it's like i'm not even here (mthu), Angel Of My Dreams (JADE), All I Want for Christmas Is You (Mariah Carey), Coming Up Roses (Harry Styles).
    - **Orari di pubblicazione** (ora italiana, 6 al giorno): 14:00, 17:00, 20:00, 23:00, 02:00, 05:00. Corrispondono a New York 08:00, 11:00, 14:00, 17:00, 20:00, 23:00 e a Los Angeles 05:00, 08:00, 11:00, 14:00, 17:00, 20:00. Gli slot si assegnano in ordine; 02:00 e 05:00 sono già il giorno dopo. Nei campi `day` e `slot` del post vanno il giorno di pubblicazione e l'orario italiano.
@@ -102,6 +109,8 @@ vidIQ è collegato al canale **Zkeyoo** (`UCDrAa6j3kpvjK6GFwkaw8Xg`, @zkeyooreal
 - `render_card.cjs`: genera la card bianca trasparente con Playwright e il font Inter. Usa virgolette tipografiche e non lascia parole o emoji da sole sull'ultima riga.
 - `make_short.py`: crea il video (sfondo + card) in 1080×1920, 30 fps, 6 s, H.264 senza audio. L'utente aggiunge la musica nell'app YouTube.
 - `work/` e `out/` non vanno su git: contengono le immagini scaricate e gli MP4.
+
+- **Il post ben visibile conta più dello sfondo (regola dell'utente):** card sempre grande e leggibile; se copre i personaggi dello sfondo va bene. Mai rimpicciolirla o spostarla per mostrare più sfondo.
 
 ## Regole di layout
 - La card occupa il 76% della larghezza ed è centrata nella fascia libera dello sfondo. Se è troppo alta si riduce la foto, poi il testo.
