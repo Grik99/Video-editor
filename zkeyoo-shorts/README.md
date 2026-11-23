@@ -30,6 +30,12 @@ Shorts da 6 secondi in stile "post + fake tweet" per il canale **Zkeyoo** (@zkey
    - Usa vidIQ con `vidiq_outliers` (contentType short, publishedWithin thisWeek) sui competitor elencati sotto e `vidiq_channel_videos` sul singolo canale.
    - Puoi riprendere i post dei competitor che funzionano, ma riscrivi sempre il testo sopra e il commento. La foto va presa dalla fonte originale, mai dal video del competitor.
    - Controlla `posts/` per non ripetere un argomento.
+   - **Metodo Vexumi (trova roba più interessante, usarlo sempre):**
+     - **Bored Panda come miniera principale.** `python3 -I bp_scan.py` elenca gli articoli e le liste del giorno; `python3 -I bp_scan.py <url lista> 20` estrae i singoli post ordinati per punteggio, con testo, link della foto e fonte originale (spesso Reddit). Liste utili: text messages, wholesome, facts ("65 Facts…", "79 Random Facts…"), "People Who…", animali, genitori, mariti/mogli, overheard.
+     - **Non solo notizie della settimana: anche storie "evergreen"** virali e vere (storia, gesti belli di qualche anno fa, curiosità), come Islanda 1975, le medaglie sovietiche dell'Apollo 11, Tippi Hedren e le manicure. Sono spesso più forti delle notizie del giorno.
+     - **Verifica veloce con Bing News RSS** (funziona da qui e dà i link veri): `curl -sL -A "<UA browser>" "https://www.bing.com/news/search?q=<parole>&format=rss"`. Anche Google News RSS. Poi WebSearch standard sui dettagli.
+     - **Foto:** quelle di Bored Panda sono su `static.boredpanda.com/...__700.jpg`. Scarta le foto stock (unsplash, pexels, getty) e quelle che sembrano fatte con l'AI; cerca la foto vera nell'articolo originale (og:image). Wikimedia: usa `commons.wikimedia.org/wiki/Special:FilePath/<file>` invece dell'API.
+     - **Non rifare gli argomenti del canale Vexumi** (elenco in `other_channels.json`).
 2. **Mix di generi.** Ogni gruppo di video deve variare, non solo notizie: divertente/meme, virale, drama/dibattito (es. "unpopular opinion", chi ha ragione?), fatti tristi o commoventi, fatti storici "lo sapevi?", trend del momento, attualità calda, post interattivi ("quale scegli?", "solo chi è degli anni '90…", illusioni).
    - Mai due generi uguali di fila.
    - Solo storie vere e verificate. Niente bufale e niente dettagli inventati.

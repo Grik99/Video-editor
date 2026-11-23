@@ -18,6 +18,13 @@ Everything lives in `zkeyoo-shorts/` (the detailed rules are in `zkeyoo-shorts/R
   `vidiq_outliers` (contentType short, publishedWithin thisWeek, channelIds = competitors + similar channels listed in README).
   Copying a competitor's *idea* is allowed: rewrite all text and get the photo from the original source, never from their video.
 - Web/social: `WebSearch` (extended for "this week" viral, wholesome, drama/AITA, weird news, memes, trending debates).
+- **Vexumi method (finds more interesting posts, always use it):**
+  - Bored Panda is the main mine: `python3 -I zkeyoo-shorts/bp_scan.py` lists today's articles/lists; `python3 -I zkeyoo-shorts/bp_scan.py <list url> 20`
+    extracts the single posts by score (text, image url, original source, often Reddit). Good lists: text messages, wholesome, facts, "People who…", animals, parents, husbands/wives, overheard.
+  - Not only this week's news: also **evergreen** true viral stories (history, old kind gestures, curiosities) — often stronger than today's news.
+  - Verify with **Bing News RSS** (`https://www.bing.com/news/search?q=...&format=rss`, curl with a browser UA; gives real article URLs) or Google News RSS, then WebSearch on the details.
+  - Skip stock images (unsplash/pexels/getty) and AI-looking photos; get the real photo from the original article (og:image). Wikimedia: `Special:FilePath/<file>` instead of the API.
+  - Never reuse a topic already used on the user's other channel Vexumi (`zkeyoo-shorts/other_channels.json`).
 - Mix genres every batch, never two of the same in a row: funny/viral, weird news, trend/meme, debate/interactive,
   sad/touching, history, did-you-know, celebrity, hot current events, "faith in humanity".
 - Before proposing, check `history_user.json`, `posts/` and the tracker: similar topics OK, **identical topic NO**.
