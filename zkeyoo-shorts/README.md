@@ -106,6 +106,8 @@ vidIQ è collegato al canale **Zkeyoo** (`UCDrAa6j3kpvjK6GFwkaw8Xg`, @zkeyooreal
 ## Regole di layout
 - La card occupa il 76% della larghezza ed è centrata nella fascia libera dello sfondo. Se è troppo alta si riduce la foto, poi il testo.
 - La card resta tra y=110 e y=930 (su 1280), così non finisce sotto il titolo, il canale e i pulsanti dell'interfaccia di Shorts.
+- **Card grande sempre.** Se uno sfondo ha i personaggi solo su un lato (es. il 24, torre a destra), in `zones.json` si mettono 4 valori `[y0, y1, x0, x1]`: la card si sposta nella parte libera e resta alta. Mai una card piccola schiacciata in una fascia bassa (l'utente non la vuole).
+- Negli screenshot di chat la battuta finale deve restare visibile: se il taglio la nasconde, ricomponi l'immagine (togli spazi vuoti e barre inutili).
 
 ## Descrizione del canale (approvata)
 just sharing relatable stories, funny threads, wild facts and internet brainrot. i find the good stuff so you don't have to.

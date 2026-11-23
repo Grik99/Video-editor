@@ -60,7 +60,7 @@ Also send ONE contact-sheet image with all candidate photos numbered (build it w
 wait-what · faith · heartbreaking · unpopular · you-decide · history · did-you-know · celeb · trending · lol. Rotate them.
 
 ### Layouts (`layout`)
-single · lr · tb · row3 · t1b2 · l1r2 · 2x2 · l2r3. Vary them; not every post is one 16:9 photo. `focus` = object-position.
+single · lr · tb · row3 · t1b2 · l1r2 · 2x2 · l2r3. **The card must always be big**: if a background's characters sit on one side (e.g. bg 24), give it 4 values `[y0,y1,x0,x1]` in `zones.json` so the card moves to the free side instead of shrinking. Chat screenshots: the punchline must stay visible (recompose the image if the crop hides it). Vary layouts; not every post is one 16:9 photo. `focus` = object-position.
 Free photos (NASA, gov, Wikimedia) when possible, but **viral quality comes first**: use the best photo anyway.
 
 ### Metadata (vidIQ)

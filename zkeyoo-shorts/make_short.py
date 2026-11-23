@@ -63,7 +63,9 @@ def main():
         json.dump(spec, open(spec_path, "w"), indent=2, ensure_ascii=False)
     bg = bg_by_number(spec["bg"])
     zones = json.load(open(os.path.join(ROOT, "backgrounds/zones.json")))
-    z0, z1 = zones[os.path.basename(bg)[:-4]]
+    zv = zones[os.path.basename(bg)[:-4]]
+    z0, z1 = zv[0], zv[1]
+    xz = zv[2:4] if len(zv) >= 4 else None  # optional free horizontal band (720 px wide coords): card moved off-centre
     # keep the card clear of the Shorts UI: top icons and the title/channel/sound block at the bottom
     z0, z1 = max(z0, SAFE_TOP), min(z1, SAFE_BOTTOM)
     k = H / 1280
@@ -75,6 +77,7 @@ def main():
         "top": spec.get("top", ""), "comment": spec["comment"],
         "images": [os.path.join(ROOT, p) for p in spec["images"]],
         "focus": spec.get("focus", []), "layout": spec.get("layout"), "zone": [round(z0 * k), round(z1 * k)],
+        "xzone": [round(xz[0] * k), round(xz[1] * k)] if xz else None,
         "out": overlay, "brand": BRAND,
         "rubric": json.load(open(os.path.join(ROOT, "rubrics.json"))).get(spec["rubric"]) if spec.get("rubric") else None,
     }

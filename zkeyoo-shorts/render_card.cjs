@@ -1,6 +1,6 @@
 // Renders the transparent 1080x1920 overlay (white "fake tweet" card) for one Short.
 // Usage: node render_card.cjs spec.json
-// spec: { top, comment, images:[path,...], focus:["50% 50%",...], layout, zone:[y0,y1] (1080x1920 px),
+// spec: { top, comment, images:[path,...], focus:["50% 50%",...], layout, zone:[y0,y1] (1080x1920 px), xzone:[x0,x1] optional,
 //         out, brand:{name, handle, logo} }
 // layouts: single | lr (left/right) | tb (top/bottom) | row3 | t1b2 (1 top, 2 bottom) | l1r2 (1 left, 2 right)
 //          | 2x2 | l2r3 (2 left, 3 right) ; default: single for 1 image, lr for 2, t1b2 for 3, 2x2 for 4, l2r3 for 5
@@ -53,6 +53,7 @@ const html = `<!doctype html><html><head><meta charset="utf-8"><style>
   #card{position:absolute;left:50%;transform:translateX(-50%);width:${Math.round(W * 0.765)}px;background:#fff;
         border-radius:24px;box-shadow:0 10px 34px rgba(0,0,0,.22);padding:30px 34px 34px;
         font-family:'Inter','Noto Color Emoji',sans-serif;color:#0f1419;--s:1}
+  ${spec.xzone ? `#card{left:${spec.xzone[0]}px;transform:none;width:${spec.xzone[1] - spec.xzone[0]}px}` : ''}
   .t{font-size:calc(33px*var(--s));line-height:1.36;font-weight:400;letter-spacing:-.15px;text-wrap:pretty;margin:0}
   #media{display:grid;gap:${GAP}px;margin-top:calc(24px*var(--s));
          ${g ? `grid-template-areas:${g.areas.map((r) => `'${r}'`).join(' ')};grid-template-columns:${g.cols};grid-template-rows:${g.rows};` : 'display:none;'}}
