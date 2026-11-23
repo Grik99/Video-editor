@@ -18,15 +18,23 @@ GENRES = ["Divertente / virale", "Notizia strana", "Trend / meme", "Dibattito / 
 
 
 def bg_names():
+    """{id: name}; set 1 ids are ints 1..30, set 2 ids are "2-001".."2-110" (backgrounds/set2/)."""
     out = {}
     for f in sorted(glob.glob(os.path.join(ROOT, "backgrounds/zkeyoo_*.mp4"))):
         m = re.match(r"zkeyoo_(\d+)_(.+)\.mp4", os.path.basename(f))
         out[int(m.group(1))] = m.group(2)
+    for f in sorted(glob.glob(os.path.join(ROOT, "backgrounds/set2/zkeyoo_*.mp4"))):
+        m = re.match(r"zkeyoo_(\d+)_(.+)\.mp4", os.path.basename(f))
+        out["2-" + m.group(1)] = m.group(2)
     return out
 
 
 def bg_label(n, names):
-    return f"{n:02d} · {names.get(n, '?')}" if n else "?"
+    if not n:
+        return "?"
+    if isinstance(n, str):
+        return f"S2-{n[2:]} · {names.get(n, '?')}"
+    return f"{n:02d} · {names.get(n, '?')}"
 
 
 def make_thumb(slug, images):
@@ -127,6 +135,8 @@ def main():
     s.cell(row=6, column=1, value="Prossimo sfondo da usare")
     nb = s.cell(row=6, column=2, value=bg_label(state["next_bg"], bg_names()))
     nb.comment = Comment("Valore preso da state.json: si aggiorna da solo a ogni video creato.", "Claude")
+    s.cell(row=7, column=1, value="Prossimo sfondo triste (set 2)")
+    s.cell(row=7, column=2, value=bg_label(state.get("next_sad", "2-101"), bg_names()))
     s.cell(row=8, column=1, value="Genere"); s.cell(row=8, column=2, value="N° video")
     r = 9
     for g in GENRES:
@@ -138,7 +148,7 @@ def main():
     hdrs = [8, r]
     r += 1
     names = bg_names()
-    for n in sorted(names):
+    for n in sorted(names, key=lambda k: (isinstance(k, str), str(k).zfill(6))):
         s.cell(row=r, column=1, value=bg_label(n, names))
         s.cell(row=r, column=2, value=f"=COUNTIF(Video!$H$2:$H${last},A{r})")
         r += 1

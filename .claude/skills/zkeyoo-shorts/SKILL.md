@@ -69,10 +69,12 @@ Free photos (NASA, gov, Wikimedia) when possible, but **viral quality comes firs
 `N — ore HH:MM — argomento (sfondo NN, rubrica, layout)` then Titolo / Descrizione / Tag / Suono. Send MP4s + tracker with SendUserFile.
 
 ## Backgrounds
-- 28 animated backgrounds in `backgrounds/` (files 01, 02, 05–30; 03/04 don't exist). One new background per video, in file order;
-  next one is in `state.json`. Re-rendering a post keeps its background.
-- The user's own 9 earlier videos used 01–11 (see `history_user.json`).
-- **Warn the user when the last background (30) is used**, before the rotation restarts from 01.
+- Set 1: 28 animated backgrounds in `backgrounds/` (files 01, 02, 05–30; 03/04 don't exist). The user's own 9 videos used 01–11 (`history_user.json`).
+- Set 2: 110 backgrounds in `backgrounds/set2/` (`zkeyoo_001`–`zkeyoo_110`), ids `"2-001"`…`"2-110"` in posts (Excel `S2-NNN`). Used right after set 1 ends (after 30).
+  001–100 = normal rotation in file order; **101–110 (`sad_…`) only for sad posts** (rubric `heartbreaking`), own rotation `next_sad`.
+  `make_short.py` handles all of this; set-2 zones were auto-detected, so always check the still.
+- One new background per video; next one is in `state.json`. Re-rendering a post keeps its background.
+- **Warn the user** when set 1 ends (30) and when the last normal background (`2-100`) is used, before the rotation restarts.
 - `backgrounds/zones.json` = free vertical band per background; the card is also kept inside y 110–930 (of 1280) so the Shorts UI
   doesn't cover it.
 

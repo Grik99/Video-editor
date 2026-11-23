@@ -15,21 +15,33 @@ SAFE_TOP, SAFE_BOTTOM = 110, 930  # in 720x1280 coordinates
 BRAND = {"name": "Zkeyoo", "handle": "@zkeyooreal", "logo": os.path.join(ROOT, "brand/logo.png")}
 
 
-def bg_files():
-    return sorted(glob.glob(os.path.join(ROOT, "backgrounds/zkeyoo_*.mp4")))
+SAD_RUBRICS = {"heartbreaking"}  # set 2 has 10 backgrounds made for sad posts (101-110)
+
+
+def bg_list():
+    """All backgrounds in rotation order: set 1 (ids 1..30, backgrounds/zkeyoo_NN_*.mp4),
+    then set 2 (ids "2-001".., backgrounds/set2/zkeyoo_NNN_*.mp4). Returns [(id, path, is_sad)]."""
+    out = []
+    for f in sorted(glob.glob(os.path.join(ROOT, "backgrounds/zkeyoo_*.mp4"))):
+        out.append((int(re.search(r"zkeyoo_(\d+)_", os.path.basename(f)).group(1)), f, False))
+    for f in sorted(glob.glob(os.path.join(ROOT, "backgrounds/set2/zkeyoo_*.mp4"))):
+        m = re.search(r"zkeyoo_(\d+)_(.+)\.mp4", os.path.basename(f))
+        out.append((f"2-{m.group(1)}", f, m.group(2).startswith("sad_")))
+    return out
 
 
 def bg_by_number(n):
-    for f in bg_files():
-        if int(re.search(r"zkeyoo_(\d+)_", os.path.basename(f)).group(1)) == n:
+    for i, f, _ in bg_list():
+        if str(i) == str(n):
             return f
     raise SystemExit(f"background {n} not found")
 
 
-def next_in_rotation(n):
-    nums = [int(re.search(r"zkeyoo_(\d+)_", os.path.basename(f)).group(1)) for f in bg_files()]
-    later = [x for x in nums if x > n]
-    return later[0] if later else nums[0]
+def next_in_rotation(n, sad=False):
+    """Next background after n among the normal ones (sad=False) or the sad ones (sad=True); wraps around."""
+    ids = [i for i, _, s in bg_list() if s == sad]
+    pos = [str(i) for i in ids].index(str(n)) if str(n) in [str(i) for i in ids] else -1
+    return ids[(pos + 1) % len(ids)]
 
 
 def main():
@@ -40,8 +52,13 @@ def main():
     if "--bg" in sys.argv:
         spec["bg"] = int(sys.argv[sys.argv.index("--bg") + 1])
     if not spec.get("bg"):
-        spec["bg"] = state["next_bg"]
-        state["next_bg"] = next_in_rotation(spec["bg"])
+        # once set 1 is finished (next_bg is a "2-..." id), sad posts take the sad backgrounds 101-110
+        if isinstance(state["next_bg"], str) and spec.get("rubric") in SAD_RUBRICS:
+            spec["bg"] = state.get("next_sad", "2-101")
+            state["next_sad"] = next_in_rotation(spec["bg"], sad=True)
+        else:
+            spec["bg"] = state["next_bg"]
+            state["next_bg"] = next_in_rotation(spec["bg"])
         json.dump(state, open(state_path, "w"), indent=2)
         json.dump(spec, open(spec_path, "w"), indent=2, ensure_ascii=False)
     bg = bg_by_number(spec["bg"])

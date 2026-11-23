@@ -1,0 +1,35 @@
+{
+  "rubric": "you-decide",
+  "genre_it": "Interattivo / indovinello",
+  "category": "puzzle",
+  "layout": "single",
+  "top": "How many squares can you find?",
+  "comment": "Count the big ones too, not just the small boxes. Drop your number before you check the description.",
+  "images": [
+    "work/img/squares.png"
+  ],
+  "focus": [
+    "50% 50%"
+  ],
+  "topic_it": "Indovinello originale: griglia 4x4 con il centro aperto in un unico quadrato grande. Risposta 18 (verificata con il codice)",
+  "photo_it": "Grafica originale disegnata da noi (griglia di quadrati)",
+  "image_sources": [
+    "original"
+  ],
+  "sources": [
+    "original puzzle, answer verified by brute-force count: 12 small + 1 centre 2x2 + 4 of 3x3 + 1 outer = 18"
+  ],
+  "day": 3,
+  "slot": "20:00",
+  "title": "Don't guess, just count: How many squares? #puzzle #challenge #math",
+  "description": "Count every square, small and big. Answer: 18 (12 small, 1 big in the middle, 4 three-by-three and the outer one). All stories are independently researched, fact-checked, and transformed through original scripting, editing, and commentary for educational and entertainment purposes. #shorts #puzzle #brainteaser #howmanysquares #challenge #math #zkeyoo",
+  "tags": [
+    "brain teasers with answers",
+    "brain teasers",
+    "how many squares",
+    "riddles",
+    "test your knowledge"
+  ],
+  "sound": "Chess (Type Beat) (Slowed) — joyful",
+  "bg": 26
+}

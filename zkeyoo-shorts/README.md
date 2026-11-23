@@ -16,9 +16,14 @@ Shorts da 6 secondi in stile "post + fake tweet" per il canale **Zkeyoo** (@zkey
 6. **Emoji nei commenti: non sempre.** Al massimo circa la metà dei commenti ne ha una, e mai la stessa di fila.
 
 ## Rotazione sfondi
-**Avviso ultimo sfondo (richiesta dell'utente):** quando si usa l'ultimo sfondo (il 30) oppure il prossimo sfondo della rotazione fa ripartire dall'01, avvisa l'utente nel messaggio di consegna, prima di continuare. Gli sfondi disponibili sono 28 (01, 02, 05–30).
+- **Set 1** (`backgrounds/`): 28 sfondi, file 01, 02, 05–30 (03 e 04 non esistono). I 9 video dell'utente hanno usato 01–11.
+- **Set 2** (`backgrounds/set2/`, consegnato il 23 nov): 110 sfondi `zkeyoo_001`–`zkeyoo_110`. Nei post e nell'Excel si scrivono `"2-001"` … `"2-110"` (Excel: `S2-001`). Si usa appena finito il set 1 (dopo il 30).
+  - **001–100**: rotazione normale, in ordine.
+  - **101–110 (`sad_…`)**: solo per i post tristi (rubrica `heartbreaking`), con una rotazione a parte (`next_sad` in `state.json`).
+- Il prossimo sfondo è sempre in `state.json` e nel foglio Riepilogo dell'Excel. Se ri-renderizzi un post, tiene il suo sfondo.
+- Le fasce libere del set 2 in `zones.json` sono state calcolate in automatico: controlla sempre il fotogramma prima di mandare il video.
 
-Gli sfondi si contano in ordine di file (01, 02, 05, 06, …; 03 e 04 non esistono). I 9 video dell'utente hanno usato 01–11. Il prossimo è sempre in `state.json` e nel foglio Riepilogo dell'Excel.
+**Avviso ultimo sfondo (richiesta dell'utente):** avvisa l'utente nel messaggio di consegna quando si usa l'ultimo sfondo della rotazione normale (oggi il `2-100`), prima che si riparta dall'inizio. Avvisa anche quando finisce il set 1 (il 30) e si passa al set 2.
 
 ## Ricerca e criteri dei video
 1. **Ricerca.** Cerca i post migliori del momento sul web, sui social (X, Reddit, Instagram, TikTok) e sui canali YouTube simili.
@@ -85,8 +90,8 @@ vidIQ è collegato al canale **Zkeyoo** (`UCDrAa6j3kpvjK6GFwkaw8Xg`, @zkeyooreal
 
 ## File
 - `posts/*.json`: un file per Short, con testi, foto, layout, sfondo, metadati e fonti. Serve anche come storico.
-- `backgrounds/`: i 28 sfondi animati (720×1280, 6 s). `zones.json` indica per ogni sfondo la fascia libera per la card.
-- `state.json`: il prossimo sfondo della rotazione. Ogni Short nuovo prende il successivo e dopo il 30 si riparte dall'01. Se ri-renderizzi un post, tiene il suo sfondo.
+- `backgrounds/`: i 28 sfondi animati del set 1 e `set2/` con i 110 del set 2 (720×1280, 6 s). `zones.json` indica per ogni sfondo la fascia libera per la card.
+- `state.json`: il prossimo sfondo della rotazione (`next_bg`) e il prossimo sfondo triste (`next_sad`). Ogni Short nuovo prende il successivo; dopo il 30 si passa al set 2. Se ri-renderizzi un post, tiene il suo sfondo.
 - `brand/logo.png`: il logo tondo HD, ricavato da `brand/logo_source.jpg`.
 - `render_card.cjs`: genera la card bianca trasparente con Playwright e il font Inter. Usa virgolette tipografiche e non lascia parole o emoji da sole sull'ultima riga.
 - `make_short.py`: crea il video (sfondo + card) in 1080×1920, 30 fps, 6 s, H.264 senza audio. L'utente aggiunge la musica nell'app YouTube.

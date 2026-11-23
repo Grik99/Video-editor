@@ -1,115 +1,555 @@
 {
-  "_info": "Free vertical zone [top, bottom] for the card, in 720x1280 coordinates (the renderer scales them). The card is centred inside the zone and shrinks its photo to fit.",
-  "zkeyoo_01_peek_wall": [
-    60,
-    860
-  ],
-  "zkeyoo_02_hang_top": [
-    170,
-    1235
-  ],
-  "zkeyoo_05_popcorn_movie": [
-    185,
-    870
-  ],
-  "zkeyoo_06_skate_rail": [
-    225,
-    870
-  ],
-  "zkeyoo_07_ufo": [
-    160,
-    1040
-  ],
-  "zkeyoo_08_paper_plane": [
-    175,
-    990
-  ],
-  "zkeyoo_09_dj": [
-    200,
-    895
-  ],
-  "zkeyoo_10_gamer": [
-    240,
-    885
-  ],
-  "zkeyoo_11_phone_chill_top": [
-    250,
-    1230
-  ],
-  "zkeyoo_12_sleepy_cloud": [
-    300,
-    1065
-  ],
-  "zkeyoo_13_rain_umbrella": [
-    200,
-    790
-  ],
-  "zkeyoo_14_balloons_parachute": [
-    60,
-    1220
-  ],
-  "zkeyoo_15_rocket_ride": [
-    60,
-    1220
-  ],
-  "zkeyoo_16_basketball": [
-    180,
-    890
-  ],
-  "zkeyoo_17_four_corners": [
-    160,
-    970
-  ],
-  "zkeyoo_18_money_rain": [
-    60,
-    940
-  ],
-  "zkeyoo_19_fishing_boot": [
-    310,
-    1080
-  ],
-  "zkeyoo_20_selfie_top": [
-    250,
-    1230
-  ],
-  "zkeyoo_21_coffee_hyper": [
-    60,
-    950
-  ],
-  "zkeyoo_22_ice_cream": [
-    60,
-    850
-  ],
-  "zkeyoo_23_snowman": [
-    60,
-    870
-  ],
-  "zkeyoo_24_tower_three": [
-    60,
-    640
-  ],
-  "zkeyoo_25_rock_guitar": [
-    160,
-    950
-  ],
-  "zkeyoo_26_hide_and_seek": [
-    60,
-    1220
-  ],
-  "zkeyoo_27_cat_pet": [
-    210,
-    830
-  ],
-  "zkeyoo_28_binoculars": [
-    260,
-    980
-  ],
-  "zkeyoo_29_subscribe_press": [
-    140,
-    860
-  ],
-  "zkeyoo_30_disco": [
-    150,
-    900
-  ]
+ "_info": "Free vertical zone [top, bottom] for the card, in 720x1280 coordinates (the renderer scales them). The card is centred inside the zone and shrinks its photo to fit.",
+ "zkeyoo_01_peek_wall": [
+  60,
+  860
+ ],
+ "zkeyoo_02_hang_top": [
+  170,
+  1235
+ ],
+ "zkeyoo_05_popcorn_movie": [
+  185,
+  870
+ ],
+ "zkeyoo_06_skate_rail": [
+  225,
+  870
+ ],
+ "zkeyoo_07_ufo": [
+  160,
+  1040
+ ],
+ "zkeyoo_08_paper_plane": [
+  175,
+  990
+ ],
+ "zkeyoo_09_dj": [
+  200,
+  895
+ ],
+ "zkeyoo_10_gamer": [
+  240,
+  885
+ ],
+ "zkeyoo_11_phone_chill_top": [
+  250,
+  1230
+ ],
+ "zkeyoo_12_sleepy_cloud": [
+  300,
+  1065
+ ],
+ "zkeyoo_13_rain_umbrella": [
+  200,
+  790
+ ],
+ "zkeyoo_14_balloons_parachute": [
+  60,
+  1220
+ ],
+ "zkeyoo_15_rocket_ride": [
+  60,
+  1220
+ ],
+ "zkeyoo_16_basketball": [
+  180,
+  890
+ ],
+ "zkeyoo_17_four_corners": [
+  160,
+  970
+ ],
+ "zkeyoo_18_money_rain": [
+  60,
+  940
+ ],
+ "zkeyoo_19_fishing_boot": [
+  310,
+  1080
+ ],
+ "zkeyoo_20_selfie_top": [
+  250,
+  1230
+ ],
+ "zkeyoo_21_coffee_hyper": [
+  60,
+  950
+ ],
+ "zkeyoo_22_ice_cream": [
+  60,
+  850
+ ],
+ "zkeyoo_23_snowman": [
+  60,
+  870
+ ],
+ "zkeyoo_24_tower_three": [
+  60,
+  640
+ ],
+ "zkeyoo_25_rock_guitar": [
+  160,
+  950
+ ],
+ "zkeyoo_26_hide_and_seek": [
+  60,
+  1220
+ ],
+ "zkeyoo_27_cat_pet": [
+  210,
+  830
+ ],
+ "zkeyoo_28_binoculars": [
+  260,
+  980
+ ],
+ "zkeyoo_29_subscribe_press": [
+  140,
+  860
+ ],
+ "zkeyoo_30_disco": [
+  150,
+  900
+ ],
+ "zkeyoo_001_soccer_juggle": [
+  110,
+  930
+ ],
+ "zkeyoo_002_ping_pong": [
+  112,
+  930
+ ],
+ "zkeyoo_003_bowling_strike": [
+  184,
+  912
+ ],
+ "zkeyoo_004_golf_gopher": [
+  228,
+  880
+ ],
+ "zkeyoo_005_punching_bag": [
+  110,
+  930
+ ],
+ "zkeyoo_006_deadlift": [
+  110,
+  916
+ ],
+ "zkeyoo_007_jump_rope": [
+  110,
+  896
+ ],
+ "zkeyoo_008_surf_wave": [
+  248,
+  796
+ ],
+ "zkeyoo_009_snowboard_top": [
+  248,
+  920
+ ],
+ "zkeyoo_010_archery_top": [
+  288,
+  930
+ ],
+ "zkeyoo_011_strength_test": [
+  110,
+  930
+ ],
+ "zkeyoo_012_yoyo_cat": [
+  324,
+  930
+ ],
+ "zkeyoo_013_hula_top": [
+  288,
+  930
+ ],
+ "zkeyoo_014_trampoline_flip": [
+  110,
+  844
+ ],
+ "zkeyoo_015_pool_float": [
+  200,
+  930
+ ],
+ "zkeyoo_016_karate_chop": [
+  110,
+  796
+ ],
+ "zkeyoo_017_go_kart": [
+  184,
+  930
+ ],
+ "zkeyoo_018_bike_top": [
+  284,
+  872
+ ],
+ "zkeyoo_019_pogo_top": [
+  284,
+  930
+ ],
+ "zkeyoo_020_kite_fly": [
+  110,
+  930
+ ],
+ "zkeyoo_021_drum_solo": [
+  300,
+  896
+ ],
+ "zkeyoo_022_piano_keys": [
+  160,
+  884
+ ],
+ "zkeyoo_023_stage_singer": [
+  110,
+  930
+ ],
+ "zkeyoo_024_sax_rooftop": [
+  272,
+  920
+ ],
+ "zkeyoo_025_painter": [
+  110,
+  808
+ ],
+ "zkeyoo_026_graffiti_wall": [
+  240,
+  930
+ ],
+ "zkeyoo_027_conductor": [
+  188,
+  888
+ ],
+ "zkeyoo_028_boombox_walk": [
+  110,
+  930
+ ],
+ "zkeyoo_029_royal_fanfare": [
+  288,
+  930
+ ],
+ "zkeyoo_030_tap_dance": [
+  110,
+  930
+ ],
+ "zkeyoo_031_headspin_top": [
+  284,
+  924
+ ],
+ "zkeyoo_032_magic_hat": [
+  156,
+  848
+ ],
+ "zkeyoo_033_mime_box": [
+  110,
+  848
+ ],
+ "zkeyoo_034_bubble_wand": [
+  110,
+  888
+ ],
+ "zkeyoo_035_paparazzi": [
+  156,
+  928
+ ],
+ "zkeyoo_036_elevator_party": [
+  228,
+  808
+ ],
+ "zkeyoo_037_hacker_top": [
+  110,
+  930
+ ],
+ "zkeyoo_038_tv_couch": [
+  110,
+  916
+ ],
+ "zkeyoo_039_karaoke_duet": [
+  236,
+  816
+ ],
+ "zkeyoo_040_juggling_top": [
+  284,
+  930
+ ],
+ "zkeyoo_041_pizza_toss": [
+  112,
+  852
+ ],
+ "zkeyoo_042_burger_stack": [
+  110,
+  930
+ ],
+ "zkeyoo_043_pancake_flip": [
+  110,
+  852
+ ],
+ "zkeyoo_044_ramen_slurp": [
+  224,
+  872
+ ],
+ "zkeyoo_045_birthday_cake": [
+  276,
+  796
+ ],
+ "zkeyoo_046_watermelon_seeds": [
+  192,
+  930
+ ],
+ "zkeyoo_047_bbq_grill": [
+  132,
+  900
+ ],
+ "zkeyoo_048_sushi_top": [
+  268,
+  930
+ ],
+ "zkeyoo_049_fair_cotton_candy": [
+  340,
+  930
+ ],
+ "zkeyoo_050_bubble_tea": [
+  228,
+  924
+ ],
+ "zkeyoo_051_washing_machine": [
+  110,
+  930
+ ],
+ "zkeyoo_052_robot_vacuum": [
+  196,
+  930
+ ],
+ "zkeyoo_053_alarm_clock_top": [
+  284,
+  930
+ ],
+ "zkeyoo_054_bubble_bath": [
+  110,
+  930
+ ],
+ "zkeyoo_055_laundry_line": [
+  380,
+  924
+ ],
+ "zkeyoo_056_hammock_read": [
+  256,
+  920
+ ],
+ "zkeyoo_057_banana_phones": [
+  284,
+  930
+ ],
+ "zkeyoo_058_mailbox_letters": [
+  264,
+  904
+ ],
+ "zkeyoo_059_shopping_cart": [
+  110,
+  930
+ ],
+ "zkeyoo_060_fridge_raid": [
+  110,
+  930
+ ],
+ "zkeyoo_061_wizard_spell": [
+  288,
+  930
+ ],
+ "zkeyoo_062_genie_lamp": [
+  110,
+  930
+ ],
+ "zkeyoo_063_superhero_fly": [
+  252,
+  892
+ ],
+ "zkeyoo_064_ninja_corners": [
+  110,
+  930
+ ],
+ "zkeyoo_065_pumpkin_carve": [
+  264,
+  888
+ ],
+ "zkeyoo_066_pirate_ship": [
+  248,
+  860
+ ],
+ "zkeyoo_067_dragon_rider": [
+  260,
+  864
+ ],
+ "zkeyoo_068_treasure_chest": [
+  110,
+  930
+ ],
+ "zkeyoo_069_crystal_ball": [
+  110,
+  876
+ ],
+ "zkeyoo_070_portal_run": [
+  264,
+  930
+ ],
+ "zkeyoo_071_dog_walk_top": [
+  280,
+  930
+ ],
+ "zkeyoo_072_aquarium_face": [
+  110,
+  908
+ ],
+ "zkeyoo_073_birds_branch_top": [
+  256,
+  930
+ ],
+ "zkeyoo_074_bee_chase_edges": [
+  110,
+  930
+ ],
+ "zkeyoo_075_hamster_wheel": [
+  110,
+  868
+ ],
+ "zkeyoo_076_garden_grow": [
+  236,
+  880
+ ],
+ "zkeyoo_077_campfire_night": [
+  110,
+  930
+ ],
+ "zkeyoo_078_sandcastle": [
+  236,
+  908
+ ],
+ "zkeyoo_079_butterfly_net_top": [
+  284,
+  930
+ ],
+ "zkeyoo_080_penguin_slide": [
+  110,
+  930
+ ],
+ "zkeyoo_081_astronaut_float": [
+  110,
+  930
+ ],
+ "zkeyoo_082_window_washer_top": [
+  264,
+  930
+ ],
+ "zkeyoo_083_vr_saber": [
+  124,
+  930
+ ],
+ "zkeyoo_084_drone_flight": [
+  360,
+  930
+ ],
+ "zkeyoo_085_moon_bounce": [
+  110,
+  930
+ ],
+ "zkeyoo_086_jetpack_top": [
+  400,
+  930
+ ],
+ "zkeyoo_087_magnet_pull": [
+  110,
+  930
+ ],
+ "zkeyoo_088_confetti_cannon": [
+  110,
+  768
+ ],
+ "zkeyoo_089_fireworks_night": [
+  110,
+  930
+ ],
+ "zkeyoo_090_pinata_party": [
+  110,
+  930
+ ],
+ "zkeyoo_091_limbo_bar": [
+  160,
+  900
+ ],
+ "zkeyoo_092_conga_top": [
+  284,
+  884
+ ],
+ "zkeyoo_093_swing_top": [
+  264,
+  930
+ ],
+ "zkeyoo_094_hot_air_balloon": [
+  340,
+  930
+ ],
+ "zkeyoo_095_zipline_top": [
+  404,
+  930
+ ],
+ "zkeyoo_096_tightrope_top": [
+  110,
+  930
+ ],
+ "zkeyoo_097_climbing_sides": [
+  110,
+  930
+ ],
+ "zkeyoo_098_bungee_jump": [
+  110,
+  930
+ ],
+ "zkeyoo_099_rainbow_ride": [
+  110,
+  930
+ ],
+ "zkeyoo_100_claw_machine": [
+  110,
+  832
+ ],
+ "zkeyoo_101_sad_rain_window": [
+  204,
+  852
+ ],
+ "zkeyoo_102_sad_lonely_bench": [
+  110,
+  930
+ ],
+ "zkeyoo_103_sad_umbrella_walk": [
+  188,
+  792
+ ],
+ "zkeyoo_104_sad_sunset_alone": [
+  110,
+  904
+ ],
+ "zkeyoo_105_sad_autumn_leaf": [
+  110,
+  800
+ ],
+ "zkeyoo_106_sad_candle": [
+  110,
+  930
+ ],
+ "zkeyoo_107_sad_snow_night": [
+  110,
+  930
+ ],
+ "zkeyoo_108_sad_lost_balloon": [
+  192,
+  930
+ ],
+ "zkeyoo_109_sad_rain_cloud": [
+  110,
+  756
+ ],
+ "zkeyoo_110_sad_stargazing": [
+  110,
+  930
+ ]
 }
