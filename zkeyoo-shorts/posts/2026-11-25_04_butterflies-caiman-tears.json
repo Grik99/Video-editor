@@ -1,0 +1,36 @@
+{
+  "rubric": "did-you-know",
+  "genre_it": "Curiosità / natura",
+  "category": "did you know",
+  "layout": "single",
+  "top": "Butterflies sometimes land on a caiman's face and drink its tears",
+  "comment": "They do it for the sodium in the tears. It even has a name: lachryphagy. The caiman just has to sit there and take it.",
+  "images": [
+    "work/img/butterfly_caiman_photo.jpg"
+  ],
+  "focus": [
+    "50% 50%"
+  ],
+  "topic_it": "Farfalle che bevono le lacrime di un caimano per il sodio (lacrifagia)",
+  "photo_it": "Farfalle sulla testa di un caimano (via Bored Panda)",
+  "image_sources": [
+    "https://static.boredpanda.com/blog/wp-content/uploads/2026/11/6afc22e5c1086_893920866_18128547434511119_5344131901529220815_n.jpg"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Lachryphagy",
+    "https://www.boredpanda.com/interesting-facts-pictures/"
+  ],
+  "day": 5,
+  "slot": "23:00",
+  "sound": "Angel Of My Dreams — JADE",
+  "title": "Why caimans let butterflies drink their tears #nature #science #animals",
+  "description": "Butterflies sometimes drink the tears of caimans to get sodium, a behavior called lachryphagy.\n#shorts #nature #science #animals #butterflies #didyouknow #zkeyoo\n\nAll stories are independently researched, fact-checked, and transformed through original scripting, editing, and commentary for educational and entertainment purposes.",
+  "tags": [
+    "butterflies",
+    "butterfly",
+    "colorful butterflies",
+    "animal story",
+    "funny moments"
+  ],
+  "bg": "2-009"
+}
