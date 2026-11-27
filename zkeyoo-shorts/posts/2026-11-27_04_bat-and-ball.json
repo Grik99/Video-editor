@@ -1,0 +1,36 @@
+{
+  "rubric": "brain-test",
+  "genre_it": "Interattivo / indovinello",
+  "category": "puzzle",
+  "layout": "single",
+  "top": "Most people answer this in 2 seconds… and get it wrong",
+  "comment": "If you said 10 cents, check again: the bat would cost $1.10 and the total would be $1.20. Answer in the description.",
+  "images": [
+    "work/img/puz/batball.png"
+  ],
+  "focus": [
+    "50% 50%"
+  ],
+  "topic_it": "Indovinello classico mazza e palla (Kahneman, Thinking Fast and Slow): la palla costa 5 centesimi, non 10",
+  "photo_it": "Grafica originale (testo dell'indovinello + emoji)",
+  "image_sources": [
+    "original"
+  ],
+  "sources": [
+    "classic Cognitive Reflection Test puzzle; answer: ball $0.05, bat $1.05 (1.05+0.05=1.10, 1.05-0.05=1.00)"
+  ],
+  "day": 7,
+  "slot": "23:00",
+  "sound": "Monster — Skillet",
+  "title": "Why you're wrong about the bat and ball #riddle #math #puzzle",
+  "description": "Answer: the ball costs 5 cents and the bat costs $1.05. Together that's $1.10, and the bat is exactly $1.00 more.\n#shorts #riddle #math #puzzle #brainteaser #challenge #zkeyoo\n\nAll stories are independently researched, fact-checked, and transformed through original scripting, editing, and commentary for educational and entertainment purposes.",
+  "tags": [
+    "riddles",
+    "riddles with answers",
+    "brain teasers with answers",
+    "hard riddles",
+    "brain teasers"
+  ],
+  "bg": "2-021",
+  "fit": "contain"
+}

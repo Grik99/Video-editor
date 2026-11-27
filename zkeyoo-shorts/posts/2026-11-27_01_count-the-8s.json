@@ -1,0 +1,36 @@
+{
+  "rubric": "brain-test",
+  "genre_it": "Interattivo / conta",
+  "category": "puzzle",
+  "layout": "single",
+  "top": "How many 8s are hiding in here?",
+  "comment": "Don't scroll until you've counted them all. Drop your number in the comments, the answer is in the description.",
+  "images": [
+    "work/img/puz/eights.png"
+  ],
+  "focus": [
+    "50% 50%"
+  ],
+  "topic_it": "Indovinello originale: griglia 12x12 di B con alcuni 8 nascosti. Risposta 9 (verificata dal codice e contando i simboli nell'immagine)",
+  "photo_it": "Grafica originale (griglia di B e 8)",
+  "image_sources": [
+    "original"
+  ],
+  "sources": [
+    "original puzzle; answer 9, positions row/col [[1, 8], [2, 5], [3, 4], [7, 3], [8, 10], [9, 6], [10, 7], [11, 2], [12, 11]]"
+  ],
+  "day": 7,
+  "slot": "14:00",
+  "sound": "Chess (Type Beat) (Slowed) — joyful",
+  "title": "How fast can you spot the hidden 8s? #challenge #focus #test",
+  "description": "A grid full of Bs with some 8s hidden inside. Answer: there are 9 eights.\n#shorts #challenge #brainteaser #puzzle #focus #test #zkeyoo\n\nAll stories are independently researched, fact-checked, and transformed through original scripting, editing, and commentary for educational and entertainment purposes.",
+  "tags": [
+    "brain teasers",
+    "brain teasers with answers",
+    "spot the difference",
+    "riddles",
+    "test your knowledge"
+  ],
+  "bg": "2-018",
+  "fit": "contain"
+}

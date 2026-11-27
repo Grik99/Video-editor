@@ -1,0 +1,36 @@
+{
+  "rubric": "brain-test",
+  "genre_it": "Interattivo / trova l'intruso",
+  "category": "puzzle",
+  "layout": "single",
+  "top": "One of these emojis is different. Can you find it in 5 seconds?",
+  "comment": "Only the fast ones get this before the video loops. Tell me the row and column you found it in 👀",
+  "images": [
+    "work/img/puz/oddemoji.png"
+  ],
+  "focus": [
+    "50% 50%"
+  ],
+  "topic_it": "Gioco originale: griglia 10x10 di 😂 con un solo 🤣; risposta riga 2, colonna 8 (verificata dal codice)",
+  "photo_it": "Grafica originale (griglia di emoji)",
+  "image_sources": [
+    "original"
+  ],
+  "sources": [
+    "original puzzle; odd emoji at row 2, column 8"
+  ],
+  "day": 8,
+  "slot": "05:00",
+  "sound": "Chess (Type Beat) (Slowed) — joyful",
+  "title": "Stop scrolling and find the odd one out #focus #brain #challenge",
+  "description": "One emoji in this grid is different. Answer: row 2, column 8.\n#shorts #focus #brain #challenge #oddoneout #emoji #zkeyoo\n\nAll stories are independently researched, fact-checked, and transformed through original scripting, editing, and commentary for educational and entertainment purposes.",
+  "tags": [
+    "spot the difference",
+    "spot the difference game",
+    "spot 3 differences",
+    "brain teasers",
+    "test your knowledge"
+  ],
+  "bg": "2-023",
+  "fit": "contain"
+}

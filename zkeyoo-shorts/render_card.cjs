@@ -39,7 +39,8 @@ if (layout !== 'none' && !g) throw new Error('unknown layout ' + layout);
 const letters = 'abcde';
 const cells = (spec.images || []).map((p, i) => {
   const focus = (spec.focus && spec.focus[i]) || '50% 50%';
-  return `<div class="ph" style="grid-area:${letters[i]}"><img src="${fileUrl(p)}" style="object-position:${focus}"></div>`;
+  const fit = (Array.isArray(spec.fit) ? spec.fit[i] : spec.fit) || 'cover'; // 'contain' = never crop (puzzles)
+  return `<div class="ph" style="grid-area:${letters[i]}${fit === 'contain' ? ';background:#fff' : ''}"><img src="${fileUrl(p)}" style="object-position:${focus};object-fit:${fit}"></div>`;
 }).join('');
 // l2r3 uses a 4-row grid where e.g. 'd' spans the middle: rebuild it as 2 left x 3 right with 6 rows
 if (layout === 'l2r3') {

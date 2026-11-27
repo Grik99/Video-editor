@@ -78,6 +78,7 @@ def main():
         "images": [os.path.join(ROOT, p) for p in spec["images"]],
         "focus": spec.get("focus", []), "layout": spec.get("layout"), "zone": [round(z0 * k), round(z1 * k)],
         "xzone": [round(xz[0] * k), round(xz[1] * k)] if xz else None,
+        "fit": spec.get("fit"),
         "out": overlay, "brand": BRAND,
         "rubric": json.load(open(os.path.join(ROOT, "rubrics.json"))).get(spec["rubric"]) if spec.get("rubric") else None,
     }

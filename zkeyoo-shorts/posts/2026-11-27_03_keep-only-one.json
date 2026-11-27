@@ -1,0 +1,36 @@
+{
+  "rubric": "you-decide",
+  "genre_it": "Interattivo / scelta",
+  "category": "this or that",
+  "layout": "single",
+  "top": "You can only keep ONE of these forever. The other three disappear.",
+  "comment": "No phone means no maps, no music app, no group chat. Choose wisely and tell me which one survived.",
+  "images": [
+    "work/img/puz/keepone.png"
+  ],
+  "focus": [
+    "50% 50%"
+  ],
+  "topic_it": "Gioco originale: tieni per sempre solo uno tra pizza, telefono, caffè e musica",
+  "photo_it": "Grafica originale (4 riquadri con emoji)",
+  "image_sources": [
+    "original"
+  ],
+  "sources": [
+    "original"
+  ],
+  "day": 7,
+  "slot": "20:00",
+  "sound": "Beat Automotivo Tan Tan Tan Viral — WZ Beat",
+  "title": "What would you keep forever? #shorts #challenge #wouldyourather",
+  "description": "Pizza, your phone, coffee or music: you can only keep one forever.\n#shorts #challenge #wouldyourather #thisorthat #choose #fun #zkeyoo\n\nAll stories are independently researched, fact-checked, and transformed through original scripting, editing, and commentary for educational and entertainment purposes.",
+  "tags": [
+    "would you rather",
+    "would you rather questions",
+    "would you rather challenge",
+    "would you rather dream house",
+    "funny shorts"
+  ],
+  "bg": "2-020",
+  "fit": "contain"
+}
