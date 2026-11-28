@@ -1,0 +1,40 @@
+{
+  "rubric": "wait-what",
+  "genre_it": "Storia assurda",
+  "category": "weird history",
+  "layout": "lr",
+  "top": "In 1932, Australia sent soldiers with machine guns to fight an enemy in Western Australia. The soldiers lost.",
+  "comment": "The enemy was about 20,000 emus eating the wheat farms. After weeks of shooting, the army pulled out and the emus barely noticed. It's called the Great Emu War.",
+  "images": [
+    "work/img/st2/emu_war_wiki.jpg",
+    "work/img/st2/emu_ng.jpg"
+  ],
+  "focus": [
+    "50% 40%",
+    "60% 40%"
+  ],
+  "topic_it": "La 'Grande guerra degli emù' (Australia Occidentale, novembre-dicembre 1932): soldati con mitragliatrici Lewis contro circa 20.000 emù, operazione fallita",
+  "photo_it": "Foto storica di un soldato con un emù durante la Emu War (Wikimedia Commons, pubblico dominio) + un emù (National Geographic)",
+  "image_sources": [
+    "https://commons.wikimedia.org/wiki/File:Deceased_emu_during_Emu_War.jpg",
+    "https://i.natgeofe.com/n/c1377ad7-b51a-4e64-baa3-fa2441787d5e/Minden_00542574_16x9.jpg"
+  ],
+  "sources": [
+    "https://www.britannica.com/topic/Emu-War",
+    "https://www.nationalgeographic.com/history/article/australian-emu-war-history",
+    "https://en.wikipedia.org/wiki/Emu_War"
+  ],
+  "day": 9,
+  "slot": "20:00",
+  "sound": "Oh Klahoma — Jack Stauber",
+  "title": "They sent soldiers to fight Emus and lost #history #fail #didyouknow",
+  "description": "In 1932, Australian soldiers with machine guns were sent against about 20,000 emus in Western Australia, and the emus won the Great Emu War.\n#shorts #history #fail #didyouknow #emuwar #australia #zkeyoo\n\nAll stories are independently researched, fact-checked, and transformed through original scripting, editing, and commentary for educational and entertainment purposes.",
+  "tags": [
+    "emu war",
+    "great emu war",
+    "the great emu war",
+    "the emu war",
+    "emu war australia"
+  ],
+  "bg": "2-032"
+}

@@ -1,0 +1,40 @@
+{
+  "rubric": "celeb",
+  "genre_it": "Celebrità / gesto bello",
+  "category": "celebrity",
+  "layout": "lr",
+  "top": "Tom Holland plays Spider-Man on the big screen. But some of his best Spider-Man moments never made it into a movie.",
+  "comment": "He has visited children's hospitals in the full suit since 2016, doing flips for the kids. In 2019 he came back with Zendaya and Jake Gyllenhaal 🕷️",
+  "images": [
+    "work/img/st2/holland_gr.jpg",
+    "work/img/st2/holland_ktvu_l.jpg"
+  ],
+  "focus": [
+    "35% 40%",
+    "50% 40%"
+  ],
+  "topic_it": "Tom Holland visita gli ospedali pediatrici vestito da Spider-Man (Atlanta 2016, Children's Hospital Los Angeles 2017 e 2019 con Zendaya e Jake Gyllenhaal)",
+  "photo_it": "Holland in costume con un bambino (GamesRadar, 2016) + visita al Children's Hospital LA 2019 (KTVU)",
+  "image_sources": [
+    "https://cdn.mos.cms.futurecdn.net/noeAXorzTkAYuTcAE7wfoW-1200-80.jpg",
+    "https://images.foxtv.com/static.ktvu.com/www.ktvu.com/content/uploads/2019/09/1200/630/Spider-Man-cast-Tom-Holland2C-Zendaya2C-Jake-Gyllenhaal-surprises-kids-at-Children27s-Hospital-LA_1562079737221_7464668_ver1.0_640_360.jpg"
+  ],
+  "sources": [
+    "https://www.gamesradar.com/tom-holland-dons-his-spider-man-homecoming-costume-for-hospital-visit",
+    "https://ktvu.com/news/spider-man-cast-tom-holland-zendaya-jake-gyllenhaal-surprise-sick-kids-at-childrens-hospital-la",
+    "https://comicbook.com/2016/08/19/tom-holland-wears-spider-man-suit-to-visit-childrens-hospital"
+  ],
+  "day": 9,
+  "slot": "14:00",
+  "sound": "Monster — Skillet",
+  "title": "He never stopped doing this #tomholland #spiderman #hero",
+  "description": "Since 2016, Tom Holland has visited children's hospitals in his full Spider-Man suit, and in 2019 he brought Zendaya and Jake Gyllenhaal along.\n#shorts #tomholland #spiderman #hero #marvel #kindness #zkeyoo\n\nAll stories are independently researched, fact-checked, and transformed through original scripting, editing, and commentary for educational and entertainment purposes.",
+  "tags": [
+    "tom holland",
+    "tom holland spiderman",
+    "tom holland spider man",
+    "tom holland and zendaya",
+    "spider-man tom holland"
+  ],
+  "bg": "2-030"
+}
