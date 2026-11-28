@@ -1,0 +1,40 @@
+{
+  "rubric": "history",
+  "genre_it": "Storia / gratitudine",
+  "category": "history",
+  "layout": "lr",
+  "top": "In 1847, just 14 years after being forced off their land on the Trail of Tears, the Choctaw Nation sent money to strangers across the ocean.",
+  "comment": "They raised $170 for Irish families starving in the Great Famine. In 2017 Ireland unveiled this sculpture, Kindred Spirits, to say thank you.",
+  "images": [
+    "work/img/st/kindred_mm.jpg",
+    "work/img/st/kindred_it.jpg"
+  ],
+  "focus": [
+    "50% 50%",
+    "40% 50%"
+  ],
+  "topic_it": "Nel 1847 i Choctaw raccolgono 170 dollari per le vittime della carestia irlandese; nel 2017 a Midleton (Cork) la scultura 'Kindred Spirits' di Alex Pentek",
+  "photo_it": "Scultura Kindred Spirits a Midleton (My Modern Met + Irish Times)",
+  "image_sources": [
+    "https://mymodernmet.com/wp/wp-content/uploads/2021/04/kindred-spirits-sculpture-thumbnail-1.jpg",
+    "https://www.irishtimes.com/resizer/v2/XFXQQVCHE646LUMM3MRPRJGC34.jpg"
+  ],
+  "sources": [
+    "https://www.irishtimes.com/news/ireland/irish-news/cork-sculpture-recalls-generosity-of-choctaw-nation-during-famine-1.3118580",
+    "https://en.wikipedia.org/wiki/Kindred_Spirits_(sculpture)",
+    "https://choctawnation.com/?p=25779"
+  ],
+  "day": 9,
+  "slot": "02:00",
+  "sound": "Every Breath You Take — The Police",
+  "title": "What the Choctaw did for Ireland 14 years after the Trail of Tears #history #facts #ireland",
+  "description": "In 1847 the Choctaw Nation raised $170 for Irish famine relief, and in 2017 Ireland thanked them with the Kindred Spirits sculpture.\n#shorts #history #facts #ireland #choctaw #kindness #zkeyoo\n\nAll stories are independently researched, fact-checked, and transformed through original scripting, editing, and commentary for educational and entertainment purposes.",
+  "tags": [
+    "irish famine",
+    "great irish famine",
+    "irish history",
+    "irish potato famine",
+    "history documentary"
+  ],
+  "bg": "2-028"
+}

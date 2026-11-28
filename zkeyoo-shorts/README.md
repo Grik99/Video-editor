@@ -25,6 +25,14 @@ Shorts da 6 secondi in stile "post + fake tweet" per il canale **Zkeyoo** (@zkey
 
 **Avviso ultimo sfondo (richiesta dell'utente):** avvisa l'utente nel messaggio di consegna quando si usa l'ultimo sfondo della rotazione normale (oggi il `2-100`), prima che si riparta dall'inizio. Avvisa anche quando finisce il set 1 (il 30) e si passa al set 2.
 
+## Stile principale (deciso dall'utente il 28 nov, con esempi del canale Vexumi)
+- **Testo sopra = gancio** che crea curiosità e non dà la risposta (es. "Questi identikit sono stati disegnati PRIMA che qualcuno sapesse com'erano i sospettati"; "Nel 1865 un ex padrone scrisse al suo ex schiavo chiedendogli di tornare. Lui rispose.").
+- **Commento = risposta / colpo di scena** con dettagli veri e precisi (nomi, numeri, date), 2-3 righe, emoji finale a volte.
+- **Foto vere**, spesso 2 affiancate (`lr`): la persona + la prova (prima/dopo, foto storica + oggi, celebrità + scena).
+- Argomenti soprattutto: curiosità "did you know" (natura, lingue, scienza), storia con lettere/foto storiche, storie commoventi (animali, soldati, gesti), fede nell'umanità, celebrità con colpo di scena o foto spontanee virali. Anche divertenti, ma sempre in questo stile.
+- Fonti migliori: le liste di fatti e storie di Bored Panda (`weird-creepy-facts-factsweird`, `interesting-facts-pictures`, `strange-history-facts-moments`, `real-interesting-stories`, "72 weird and wonderful facts"), poi verifica su 2 testate e prendi le foto vere dagli articoli (mai le infografiche con il testo sopra).
+- Le sfide/indovinelli restano un'aggiunta: massimo 2 su 6, meglio 0-1.
+
 ## Ricerca e criteri dei video
 1. **Ricerca.** Cerca i post migliori del momento sul web, sui social (X, Reddit, Instagram, TikTok) e sui canali YouTube simili.
    - Usa vidIQ con `vidiq_outliers` (contentType short, publishedWithin thisWeek) sui competitor elencati sotto e `vidiq_channel_videos` sul singolo canale.

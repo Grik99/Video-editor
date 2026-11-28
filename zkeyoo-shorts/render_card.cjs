@@ -96,7 +96,7 @@ const html = `<!doctype html><html><head><meta charset="utf-8"><style>
     const avg = (a) => a.reduce((x, y) => x + y, 0) / a.length;
     let mh = 0; // natural media height for the layout
     if (layout === 'single') mh = mw / clamp(ar[0], 0.8, 2.2);
-    else if (layout === 'lr') mh = half / clamp(avg(ar), 0.6, 1.6);
+    else if (layout === 'lr') mh = half / clamp(avg(ar), 0.6, 1.0); // panels at least square, so the photos stay big
     else if (layout === 'tb') mh = ar.reduce((s, a) => s + mw / clamp(a, 1.3, 2.2), 0) + GAP;
     else if (layout === 'row3') mh = third / clamp(avg(ar), 0.5, 1.3);
     else if (layout === 't1b2') mh = mw / clamp(ar[0], 1.3, 2.0) + GAP + half / clamp(avg(ar.slice(1)), 0.8, 1.4);

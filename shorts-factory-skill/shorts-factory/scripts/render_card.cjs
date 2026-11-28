@@ -1,6 +1,6 @@
-// Renders the transparent 1080x1920 overlay (white "fake tweet" card) for one Short (generic: brand comes from the spec).
+// Renders the transparent 1080x1920 overlay (white "fake tweet" card) for one Short.
 // Usage: node render_card.cjs spec.json
-// spec: { top, comment, images:[path,...], focus:["50% 50%",...], layout, zone:[y0,y1] (1080x1920 px),
+// spec: { top, comment, images:[path,...], focus:["50% 50%",...], layout, zone:[y0,y1] (1080x1920 px), xzone:[x0,x1] optional,
 //         out, brand:{name, handle, logo} }
 // layouts: single | lr (left/right) | tb (top/bottom) | row3 | t1b2 (1 top, 2 bottom) | l1r2 (1 left, 2 right)
 //          | 2x2 | l2r3 (2 left, 3 right) ; default: single for 1 image, lr for 2, t1b2 for 3, 2x2 for 4, l2r3 for 5
@@ -39,7 +39,8 @@ if (layout !== 'none' && !g) throw new Error('unknown layout ' + layout);
 const letters = 'abcde';
 const cells = (spec.images || []).map((p, i) => {
   const focus = (spec.focus && spec.focus[i]) || '50% 50%';
-  return `<div class="ph" style="grid-area:${letters[i]}"><img src="${fileUrl(p)}" style="object-position:${focus}"></div>`;
+  const fit = (Array.isArray(spec.fit) ? spec.fit[i] : spec.fit) || 'cover'; // 'contain' = never crop (puzzles)
+  return `<div class="ph" style="grid-area:${letters[i]}${fit === 'contain' ? ';background:#fff' : ''}"><img src="${fileUrl(p)}" style="object-position:${focus};object-fit:${fit}"></div>`;
 }).join('');
 // l2r3 uses a 4-row grid where e.g. 'd' spans the middle: rebuild it as 2 left x 3 right with 6 rows
 if (layout === 'l2r3') {
@@ -53,6 +54,7 @@ const html = `<!doctype html><html><head><meta charset="utf-8"><style>
   #card{position:absolute;left:50%;transform:translateX(-50%);width:${Math.round(W * 0.765)}px;background:#fff;
         border-radius:24px;box-shadow:0 10px 34px rgba(0,0,0,.22);padding:30px 34px 34px;
         font-family:'Inter','Noto Color Emoji',sans-serif;color:#0f1419;--s:1}
+  ${spec.xzone ? `#card{left:${spec.xzone[0]}px;transform:none;width:${spec.xzone[1] - spec.xzone[0]}px}` : ''}
   .t{font-size:calc(33px*var(--s));line-height:1.36;font-weight:400;letter-spacing:-.15px;text-wrap:pretty;margin:0}
   #media{display:grid;gap:${GAP}px;margin-top:calc(24px*var(--s));
          ${g ? `grid-template-areas:${g.areas.map((r) => `'${r}'`).join(' ')};grid-template-columns:${g.cols};grid-template-rows:${g.rows};` : 'display:none;'}}
@@ -94,7 +96,7 @@ const html = `<!doctype html><html><head><meta charset="utf-8"><style>
     const avg = (a) => a.reduce((x, y) => x + y, 0) / a.length;
     let mh = 0; // natural media height for the layout
     if (layout === 'single') mh = mw / clamp(ar[0], 0.8, 2.2);
-    else if (layout === 'lr') mh = half / clamp(avg(ar), 0.6, 1.6);
+    else if (layout === 'lr') mh = half / clamp(avg(ar), 0.6, 1.0); // panels at least square, so the photos stay big
     else if (layout === 'tb') mh = ar.reduce((s, a) => s + mw / clamp(a, 1.3, 2.2), 0) + GAP;
     else if (layout === 'row3') mh = third / clamp(avg(ar), 0.5, 1.3);
     else if (layout === 't1b2') mh = mw / clamp(ar[0], 1.3, 2.0) + GAP + half / clamp(avg(ar.slice(1)), 0.8, 1.4);

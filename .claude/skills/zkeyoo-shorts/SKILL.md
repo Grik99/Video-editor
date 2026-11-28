@@ -13,6 +13,14 @@ Everything lives in `zkeyoo-shorts/` (the detailed rules are in `zkeyoo-shorts/R
 2. **User approves** ("ok 1, 3, 5") → make only those videos.
 3. **Deliver** MP4s + metadata for each, then the updated `Zkeyoo_Shorts_tracker.xlsx`.
 
+### MAIN STYLE (user's decision, Nov 28, examples from the Vexumi channel)
+- **Top text = hook** that creates curiosity without giving the answer ("These police sketches were drawn BEFORE anyone knew what the suspects looked like").
+- **Comment = payoff / twist** with precise true details (names, numbers, dates), 2-3 lines, emoji sometimes.
+- **Real photos**, often two side by side (`lr`): the person + the proof (before/after, historic + now, celeb + scene).
+- Topics mostly: did-you-know facts (nature, language, science), history with letters/old photos, touching stories (animals, soldiers, kind gestures), faith in humanity, celebrity twists or viral candid photos. Funny ones too, but in this hook→payoff style.
+- Mine Bored Panda fact/story lists (`weird-creepy-facts-factsweird`, `interesting-facts-pictures`, `strange-history-facts-moments`, `real-interesting-stories`), verify with 2 outlets, take the real photos from articles (never the text-overlay infographics).
+- Challenges/puzzles are an extra only: max 2 of 6, better 0-1.
+
 ### 1. Research (best viral material of the moment, mixed genres)
 - Competitors (vidIQ is connected to Zkeyoo `UCDrAa6j3kpvjK6GFwkaw8Xg`): `vidiq_list_competitors`, then
   `vidiq_outliers` (contentType short, publishedWithin thisWeek, channelIds = competitors + similar channels listed in README).

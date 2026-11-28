@@ -1,0 +1,40 @@
+{
+  "rubric": "did-you-know",
+  "genre_it": "Curiosità / scienza",
+  "category": "did you know",
+  "layout": "lr",
+  "top": "In 1964, two scientists couldn't get rid of a strange hiss in their giant antenna. At one point they even blamed pigeon poop.",
+  "comment": "They cleaned it all out, and the noise stayed. It was the leftover glow of the Big Bang. Arno Penzias and Robert Wilson won the 1978 Nobel Prize for it.",
+  "images": [
+    "work/img/st/penz_nokia.jpg",
+    "work/img/st/penz_ieee.jpg"
+  ],
+  "focus": [
+    "43% 50%",
+    "50% 50%"
+  ],
+  "topic_it": "Penzias e Wilson (Bell Labs, antenna di Holmdel): il rumore di fondo che credevano dovuto ai piccioni era la radiazione cosmica di fondo; Nobel 1978",
+  "photo_it": "Penzias e Wilson davanti all'antenna (Nokia Bell Labs) + l'antenna Holmdel Horn (IEEE Spectrum)",
+  "image_sources": [
+    "https://www.nokia.com/bell-labs/about/history/innovation-stories/confirming-big-bang/",
+    "https://spectrum.ieee.org/big-bang-theory-discovery"
+  ],
+  "sources": [
+    "https://www.aps.org/funding-recognition/historic-sites/holmdel-horn-antenna",
+    "https://aps.org/publications/apsnews/200207/history.cfm",
+    "https://www.nokia.com/bell-labs/about/history/innovation-stories/confirming-big-bang/"
+  ],
+  "day": 8,
+  "slot": "17:00",
+  "sound": "Chess (Type Beat) (Slowed) — joyful",
+  "title": "They thought it was bird droppings, but it was the Big Bang #spacefacts #astronomy #science",
+  "description": "Arno Penzias and Robert Wilson blamed pigeons for the hiss in their antenna, but it was the cosmic microwave background, and it won them the 1978 Nobel Prize.\n#shorts #spacefacts #astronomy #science #bigbang #didyouknow #zkeyoo\n\nAll stories are independently researched, fact-checked, and transformed through original scripting, editing, and commentary for educational and entertainment purposes.",
+  "tags": [
+    "the big bang",
+    "big bang",
+    "big bang theory explained",
+    "the big bang theory explained",
+    "before the big bang"
+  ],
+  "bg": "2-025"
+}
